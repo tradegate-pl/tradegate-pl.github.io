@@ -169,9 +169,7 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* LANG */
-[data-lang="en"]{display:none}
-body.lang-en [data-lang="pl"]{display:none}
-body.lang-en [data-lang="en"]{display:block}
+/* lang handled by JS */
 
 @media(max-width:900px){
   nav{padding:1.2rem 2rem}
@@ -458,7 +456,16 @@ window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.
 const reveals=document.querySelectorAll('.reveal');
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target)}})},{threshold:0.1});
 reveals.forEach(r=>obs.observe(r));
-function setLang(l){document.body.classList.toggle('lang-en',l==='en');document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.toggle('active',b.textContent===l.toUpperCase())})}
+function setLang(l){
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    const show = el.getAttribute('data-lang')===l;
+    el.style.display = show ? '' : 'none';
+  });
+  document.querySelectorAll('.lang-btn').forEach(b=>{
+    b.classList.toggle('active',b.textContent===l.toUpperCase());
+  });
+}
+setLang('pl');
 </script>
 </body>
 </html>
