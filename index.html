@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)file:///C:/Users/jaros/Downloads/tradegate_1.html -->
+<!-- saved from url=(0049)file:///C:/Users/jaros/Downloads/tradegate_2.html -->
 <html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -188,7 +188,7 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
 <body>
 
 <nav id="navbar">
-  <a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#hero" class="nav-logo">
+  <a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#hero" class="nav-logo">
     <div class="nav-logo-icon"><span>TG</span></div>
     <div class="nav-logo-text">
       <span class="t1">TRADE</span>
@@ -196,10 +196,10 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#about" data-lang="pl">O nas</a><a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#about" data-lang="en" style="display: none;">About</a></li>
-    <li><a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#how" data-lang="pl">Jak działamy</a><a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#how" data-lang="en" style="display: none;">How we work</a></li>
-    <li><a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#categories" data-lang="pl">Kategorie</a><a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#categories" data-lang="en" style="display: none;">Categories</a></li>
-    <li><a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#contact" data-lang="pl">Kontakt</a><a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#contact" data-lang="en" style="display: none;">Contact</a></li>
+    <li><a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#about" data-lang="pl">O nas</a><a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#about" data-lang="en" style="display: none;">About</a></li>
+    <li><a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#how" data-lang="pl">Jak działamy</a><a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#how" data-lang="en" style="display: none;">How we work</a></li>
+    <li><a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#categories" data-lang="pl">Kategorie</a><a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#categories" data-lang="en" style="display: none;">Categories</a></li>
+    <li><a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#contact" data-lang="pl">Kontakt</a><a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#contact" data-lang="en" style="display: none;">Contact</a></li>
   </ul>
   <div class="lang-toggle">
     <button class="lang-btn active" onclick="setLang(&#39;pl&#39;)">PL</button>
@@ -218,10 +218,10 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
     <p class="hero-sub" data-lang="pl">Wprowadzamy produkty z całego świata do największych sieci handlowych w Polsce. Skutecznie, profesjonalnie, z osobistym zaangażowaniem na każdym etapie.</p>
     <p class="hero-sub" data-lang="en" style="display: none;">We introduce products from around the world to Poland's largest retail chains. Effectively, professionally, with personal commitment at every stage.</p>
     <div class="hero-cta">
-      <a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#contact" class="btn-primary" data-lang="pl">Porozmawiajmy</a>
-      <a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#contact" class="btn-primary" data-lang="en" style="display: none;">Let's talk</a>
-      <a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#how" class="btn-outline" data-lang="pl">Jak działamy</a>
-      <a href="file:///C:/Users/jaros/Downloads/tradegate_1.html#how" class="btn-outline" data-lang="en" style="display: none;">How we work</a>
+      <a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#contact" class="btn-primary" data-lang="pl">Porozmawiajmy</a>
+      <a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#contact" class="btn-primary" data-lang="en" style="display: none;">Let's talk</a>
+      <a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#how" class="btn-outline" data-lang="pl">Jak działamy</a>
+      <a href="file:///C:/Users/jaros/Downloads/tradegate_2.html#how" class="btn-outline" data-lang="en" style="display: none;">How we work</a>
     </div>
   </div>
 
@@ -463,24 +463,33 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
 // Formspree
 document.getElementById('contactForm').addEventListener('submit',async function(e){
   e.preventDefault();
-  const btn=this.querySelectorAll('[type=submit]');
-  btn.forEach(b=>b.disabled=true);
-  const data=new FormData(this);
+  const successEl=document.getElementById('formSuccess');
+  const errorEl=document.getElementById('formError');
+  const btns=this.querySelectorAll('[type=submit]');
+  btns.forEach(b=>{b.disabled=true;b.style.opacity='0.6'});
+  successEl.style.display='none';
+  errorEl.style.display='none';
   try{
-    const r=await fetch('https://formspree.io/f/xpqnloyd',{method:'POST',body:data,headers:{'Accept':'application/json'}});
+    const data=new FormData(this);
+    const r=await fetch('https://formspree.io/f/xpqnloyd',{
+      method:'POST',
+      body:data,
+      headers:{'Accept':'application/json'}
+    });
     if(r.ok){
-      document.getElementById('formSuccess').style.display='block';
-      document.getElementById('formError').style.display='none';
+      successEl.style.display='block';
+      // show both lang spans
+      successEl.querySelectorAll('span').forEach(s=>s.style.display='block');
       this.reset();
     } else {
-      document.getElementById('formError').style.display='block';
-      document.getElementById('formSuccess').style.display='none';
+      errorEl.style.display='block';
+      errorEl.querySelectorAll('span').forEach(s=>s.style.display='block');
     }
   } catch(err){
-    document.getElementById('formError').style.display='block';
+    errorEl.style.display='block';
+    errorEl.querySelectorAll('span').forEach(s=>s.style.display='block');
   }
-  btn.forEach(b=>b.disabled=false);
-  setLang(document.body.classList.contains('lang-en')?'en':'pl');
+  btns.forEach(b=>{b.disabled=false;b.style.opacity='1'});
 });
 
 const navbar=document.getElementById('navbar');
