@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -18,37 +17,21 @@
 }
 html{scroll-behavior:smooth}
 body{background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden}
-
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 4rem;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(10,22,40,0.95),transparent);transition:background 0.3s}
 nav.scrolled{background:rgba(10,22,40,0.97);border-bottom:1px solid var(--white-08)}
-
-/* LOGO W NAWIGACJI — CSS, bez SVG */
 .nav-logo{display:flex;align-items:center;gap:0.7rem;text-decoration:none}
-.nav-logo-icon{
-  width:34px;height:34px;border:1.5px solid var(--gold);
-  position:relative;display:flex;align-items:flex-end;justify-content:center;
-  padding-bottom:4px;flex-shrink:0;
-}
-.nav-logo-icon::before{
-  content:'';position:absolute;
-  top:6px;left:6px;right:6px;height:13px;
-  border-top:1.5px solid var(--gold);
-  border-radius:50% 50% 0 0;
-}
+.nav-logo-icon{width:34px;height:34px;border:1.5px solid var(--gold);position:relative;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;flex-shrink:0}
+.nav-logo-icon::before{content:'';position:absolute;top:6px;left:6px;right:6px;height:13px;border-top:1.5px solid var(--gold);border-radius:50% 50% 0 0}
 .nav-logo-icon span{font-family:'Cormorant Garamond',serif;font-size:11px;font-weight:600;color:var(--gold);letter-spacing:1px}
 .nav-logo-text{display:flex;flex-direction:column;line-height:1}
 .nav-logo-text .t1{font-family:'Cormorant Garamond',serif;font-size:0.95rem;font-weight:300;color:var(--white);letter-spacing:0.18em}
 .nav-logo-text .t2{font-family:'Cormorant Garamond',serif;font-size:0.95rem;font-weight:600;color:var(--gold);letter-spacing:0.18em}
-
 .nav-links{display:flex;gap:2.5rem;list-style:none}
 .nav-links a{color:var(--white-80);text-decoration:none;font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;transition:color 0.2s}
 .nav-links a:hover{color:var(--gold)}
 .lang-toggle{display:flex;gap:0.3rem;border:1px solid var(--white-15);border-radius:2px;overflow:hidden}
 .lang-btn{padding:0.28rem 0.65rem;background:none;border:none;cursor:pointer;color:var(--white-40);font-family:'DM Sans',sans-serif;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.2s}
 .lang-btn.active{background:var(--gold);color:var(--navy);font-weight:500}
-
-/* HERO */
 #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:8rem 4rem 4rem;position:relative;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 70% 50%,rgba(201,168,76,0.06) 0%,transparent 60%),radial-gradient(ellipse 40% 80% at 10% 50%,rgba(17,34,64,0.8) 0%,transparent 70%)}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 80% at 60% 50%,black,transparent)}
@@ -65,21 +48,12 @@ h1 em{font-style:normal;color:var(--gold)}
 .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
 .hero-scroll{position:absolute;bottom:3rem;left:4rem;display:flex;align-items:center;gap:0.8rem;color:var(--white-40);font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;opacity:0;animation:fadeUp 0.8s 1.2s forwards}
 .scroll-line{width:40px;height:1px;background:var(--white-40)}
-
-/* HERO LOGO GRANDE — centralny element hero */
-.hero-logo-grande{
-  position:absolute;right:5rem;top:50%;transform:translateY(-50%);
-  opacity:0;animation:fadeUp 0.8s 0.5s forwards;
-}
-
-/* SECTIONS */
+.hero-logo-grande{position:absolute;right:5rem;top:50%;transform:translateY(-50%);opacity:0;animation:fadeUp 0.8s 0.5s forwards}
 section{padding:6rem 4rem}
 .section-tag{display:inline-flex;align-items:center;gap:0.6rem;color:var(--gold);font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1rem}
 .section-tag::before{content:'';width:24px;height:1px;background:var(--gold)}
 h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.1;margin-bottom:1.5rem}
 h2 em{font-style:normal;color:var(--gold)}
-
-/* ABOUT */
 #about{background:var(--navy-mid)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:3rem}
 .about-text p{color:var(--white-80);line-height:1.9;margin-bottom:1.2rem;font-size:0.95rem}
@@ -96,8 +70,6 @@ h2 em{font-style:normal;color:var(--gold)}
 .value-list{list-style:none;display:flex;flex-direction:column;gap:0.8rem}
 .value-list li{display:flex;align-items:center;gap:0.8rem;font-size:0.85rem;color:var(--white-80)}
 .value-list li::before{content:'';width:20px;height:1px;background:var(--gold);flex-shrink:0}
-
-/* HOW */
 #how{background:var(--navy)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem;border:1px solid var(--white-08)}
 .step{padding:2.5rem;border-right:1px solid var(--white-08);transition:background 0.3s}
@@ -106,8 +78,6 @@ h2 em{font-style:normal;color:var(--gold)}
 .step-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:var(--white-08);line-height:1;margin-bottom:1.5rem}
 .step h4{font-size:0.88rem;font-weight:500;letter-spacing:0.05em;margin-bottom:0.8rem;color:var(--gold)}
 .step p{font-size:0.78rem;color:var(--white-40);line-height:1.7}
-
-/* CATEGORIES */
 #categories{background:var(--navy-mid)}
 .cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--white-08);margin-top:3rem;border:1px solid var(--white-08)}
 .cat{background:var(--navy-mid);padding:2.5rem;transition:background 0.3s;cursor:default}
@@ -115,8 +85,6 @@ h2 em{font-style:normal;color:var(--gold)}
 .cat-icon{width:48px;height:48px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);font-weight:600}
 .cat h4{font-size:1rem;font-weight:500;margin-bottom:0.6rem;letter-spacing:0.03em}
 .cat p{font-size:0.78rem;color:var(--white-40);line-height:1.6}
-
-/* RETAILERS */
 #retailers{background:var(--navy)}
 .retailers-intro p{color:var(--white-80);line-height:1.8;font-size:0.95rem;margin-bottom:3rem;max-width:600px}
 .logos-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--white-08);border:1px solid var(--white-08);margin-bottom:1.5rem}
@@ -124,8 +92,6 @@ h2 em{font-style:normal;color:var(--gold)}
 .logo-placeholder:hover{background:var(--navy-light)}
 .logo-placeholder span{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--white-15)}
 .retailers-note{font-size:0.72rem;color:var(--white-40);font-style:italic}
-
-/* VIDEO */
 #video{background:var(--navy-mid)}
 .video-container{margin-top:3rem;border:1px solid var(--white-08)}
 .video-placeholder{aspect-ratio:16/9;background:var(--navy-light);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem}
@@ -134,8 +100,6 @@ h2 em{font-style:normal;color:var(--gold)}
 .play-btn:hover .play-tri{border-left-color:var(--navy)}
 .play-tri{width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;border-left:20px solid var(--gold);margin-left:4px}
 .video-placeholder p{font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--white-40)}
-
-/* CONTACT */
 #contact{background:var(--navy)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:3rem}
 .contact-info p{color:var(--white-80);line-height:1.9;font-size:0.95rem;margin-bottom:2rem}
@@ -154,24 +118,15 @@ h2 em{font-style:normal;color:var(--gold)}
 textarea.form-input{resize:vertical;min-height:120px}
 .form-submit{padding:1rem 2.5rem;background:var(--gold);color:var(--navy);font-family:'DM Sans',sans-serif;font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;align-self:flex-start;transition:all 0.2s}
 .form-submit:hover{background:var(--gold-light);transform:translateY(-2px)}
-
-/* FOOTER */
 footer{background:var(--navy-mid);padding:2rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--white-08)}
 .footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:rgba(255,255,255,0.3)}
 .footer-logo span{color:var(--gold)}
 footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
-
-/* GOLD LINE */
 .gold-line{width:60px;height:1px;background:var(--gold);margin:2rem 0}
-
-/* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .reveal{opacity:0;transform:translateY(30px);transition:all 0.8s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
-
-/* LANG */
 /* lang handled by JS */
-
 @media(max-width:900px){
   nav{padding:1.2rem 2rem}
   section{padding:4rem 2rem}
@@ -187,7 +142,6 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
 </style>
 </head>
 <body>
-
 <nav id="navbar">
   <a href="#hero" class="nav-logo">
     <div class="nav-logo-icon"><span>TG</span></div>
@@ -225,24 +179,19 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
       <a href="#how" class="btn-outline" data-lang="en">How we work</a>
     </div>
   </div>
-
-  <!-- LOGO GRANDE W HERO — poprawne wyrównanie -->
   <div class="hero-logo-grande">
     <svg width="340" height="130" viewBox="0 0 560 130" xmlns="http://www.w3.org/2000/svg">
-      <!-- Piktogram: y=20, height=80, podstawa=100 -->
       <rect x="20" y="20" width="72" height="80" fill="none" stroke="#c9a84c" stroke-width="1.6" opacity="0.7"/>
       <rect x="28" y="20" width="56" height="68" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.2"/>
       <path d="M28 45 Q56 19 84 45" fill="none" stroke="#c9a84c" stroke-width="1.6" opacity="0.7"/>
       <text x="56" y="88" font-family="Cormorant Garamond,Georgia,serif" font-size="28" font-weight="600" fill="#c9a84c" text-anchor="middle" opacity="0.7">TG</text>
       <line x1="108" y1="26" x2="108" y2="106" stroke="rgba(201,168,76,0.15)" stroke-width="0.8"/>
-      <!-- TRADE baseline=54, GATE baseline=80, sentencja baseline=100 -->
       <text x="126" y="54" font-family="Cormorant Garamond,Georgia,serif" font-size="26" font-weight="300" fill="rgba(255,255,255,0.7)" letter-spacing="7">TRADE</text>
       <line x1="126" y1="62" x2="540" y2="62" stroke="#c9a84c" stroke-width="0.5" opacity="0.2"/>
       <text x="126" y="80" font-family="Cormorant Garamond,Georgia,serif" font-size="26" font-weight="600" fill="#c9a84c" letter-spacing="7" opacity="0.7">GATE</text>
       <text x="126" y="100" font-family="DM Sans,Arial,sans-serif" font-size="9" font-weight="300" fill="rgba(255,255,255,0.18)" letter-spacing="4">GATEWAY TO POLISH RETAIL</text>
     </svg>
   </div>
-
   <div class="hero-scroll">
     <div class="scroll-line"></div>
     <span data-lang="pl">Przewiń</span>
@@ -263,33 +212,9 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
       <p data-lang="en">Our collaboration model is deliberately limited to a select group of clients — guaranteeing full commitment and measurable results.</p>
       <div class="gold-line"></div>
       <div class="about-features">
-        <div class="feature">
-          <div class="feature-dot"></div>
-          <div class="feature-text">
-            <strong data-lang="pl">Bezpośrednie relacje z sieciami</strong>
-            <strong data-lang="en">Direct retail chain relationships</strong>
-            <span data-lang="pl">Znamy kupców i procedury z pierwszej ręki</span>
-            <span data-lang="en">We know buyers and procedures first-hand</span>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature-dot"></div>
-          <div class="feature-text">
-            <strong data-lang="pl">Pełna obsługa procesu</strong>
-            <strong data-lang="en">Full process management</strong>
-            <span data-lang="pl">Od negocjacji po listing i sprzedaż</span>
-            <span data-lang="en">From negotiations to listing and sales</span>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature-dot"></div>
-          <div class="feature-text">
-            <strong data-lang="pl">Transparentna współpraca</strong>
-            <strong data-lang="en">Transparent collaboration</strong>
-            <span data-lang="pl">Jasne warunki, regularne raporty</span>
-            <span data-lang="en">Clear terms, regular reporting</span>
-          </div>
-        </div>
+        <div class="feature"><div class="feature-dot"></div><div class="feature-text"><strong data-lang="pl">Bezpośrednie relacje z sieciami</strong><strong data-lang="en">Direct retail chain relationships</strong><span data-lang="pl">Znamy kupców i procedury z pierwszej ręki</span><span data-lang="en">We know buyers and procedures first-hand</span></div></div>
+        <div class="feature"><div class="feature-dot"></div><div class="feature-text"><strong data-lang="pl">Pełna obsługa procesu</strong><strong data-lang="en">Full process management</strong><span data-lang="pl">Od negocjacji po listing i sprzedaż</span><span data-lang="en">From negotiations to listing and sales</span></div></div>
+        <div class="feature"><div class="feature-dot"></div><div class="feature-text"><strong data-lang="pl">Transparentna współpraca</strong><strong data-lang="en">Transparent collaboration</strong><span data-lang="pl">Jasne warunki, regularne raporty</span><span data-lang="en">Clear terms, regular reporting</span></div></div>
       </div>
     </div>
     <div class="reveal">
@@ -321,37 +246,12 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
   <h2 data-lang="pl">Cztery kroki do <em>sukcesu</em></h2>
   <h2 data-lang="en">Four steps to <em>success</em></h2>
   <div class="steps reveal">
-    <div class="step">
-      <div class="step-num">01</div>
-      <h4 data-lang="pl">Analiza produktu</h4>
-      <h4 data-lang="en">Product analysis</h4>
-      <p data-lang="pl">Oceniamy potencjał rynkowy, konkurencję i dopasowanie do wymagań sieci handlowych.</p>
-      <p data-lang="en">We assess market potential, competition, and fit with retail chain requirements.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">02</div>
-      <h4 data-lang="pl">Strategia wejścia</h4>
-      <h4 data-lang="en">Entry strategy</h4>
-      <p data-lang="pl">Dobieramy właściwe sieci, formaty i warunki współpracy optymalnie dla Twojego produktu.</p>
-      <p data-lang="en">We select the right chains, formats and terms optimally suited for your product.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <h4 data-lang="pl">Negocjacje i listing</h4>
-      <h4 data-lang="en">Negotiations & listing</h4>
-      <p data-lang="pl">Prowadzimy negocjacje z kupcami i przeprowadzamy pełny proces listingowy.</p>
-      <p data-lang="en">We negotiate with buyers and manage the complete listing process.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">04</div>
-      <h4 data-lang="pl">Sprzedaż i monitoring</h4>
-      <h4 data-lang="en">Sales & monitoring</h4>
-      <p data-lang="pl">Wspieramy sprzedaż, monitorujemy wyniki i reagujemy na zmiany rynkowe.</p>
-      <p data-lang="en">We support sales, monitor results and respond to market changes.</p>
-    </div>
+    <div class="step"><div class="step-num">01</div><h4 data-lang="pl">Analiza produktu</h4><h4 data-lang="en">Product analysis</h4><p data-lang="pl">Oceniamy potencjał rynkowy, konkurencję i dopasowanie do wymagań sieci handlowych.</p><p data-lang="en">We assess market potential, competition, and fit with retail chain requirements.</p></div>
+    <div class="step"><div class="step-num">02</div><h4 data-lang="pl">Strategia wejścia</h4><h4 data-lang="en">Entry strategy</h4><p data-lang="pl">Dobieramy właściwe sieci, formaty i warunki współpracy optymalnie dla Twojego produktu.</p><p data-lang="en">We select the right chains, formats and terms optimally suited for your product.</p></div>
+    <div class="step"><div class="step-num">03</div><h4 data-lang="pl">Negocjacje i listing</h4><h4 data-lang="en">Negotiations & listing</h4><p data-lang="pl">Prowadzimy negocjacje z kupcami i przeprowadzamy pełny proces listingowy.</p><p data-lang="en">We negotiate with buyers and manage the complete listing process.</p></div>
+    <div class="step"><div class="step-num">04</div><h4 data-lang="pl">Sprzedaż i monitoring</h4><h4 data-lang="en">Sales & monitoring</h4><p data-lang="pl">Wspieramy sprzedaż, monitorujemy wyniki i reagujemy na zmiany rynkowe.</p><p data-lang="en">We support sales, monitor results and respond to market changes.</p></div>
   </div>
 </section>
-
 <section id="categories">
   <div class="section-tag" data-lang="pl">Kategorie produktowe</div>
   <div class="section-tag" data-lang="en">Product categories</div>
@@ -373,8 +273,8 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
   <h2 data-lang="pl">Współpracujemy z <em>wiodącymi</em><br>sieciami handlowymi</h2>
   <h2 data-lang="en">We work with <em>Poland's leading</em><br>retail chains</h2>
   <div class="retailers-intro reveal">
-    <p data-lang="pl">Posiadamy ugruntowane relacje z największymi sieciami handlowymi w Polsce — zarówno w segmencie spożywczym, jak i non-food. Nasze kontakty i doświadczenie to Twój klucz do polskiego rynku detalicznego.</p>
-    <p data-lang="en">We have established relationships with Poland's largest retail chains — both food and non-food segments. Our contacts and experience are your key to the Polish retail market.</p>
+    <p data-lang="pl">Posiadamy ugruntowane relacje z największymi sieciami handlowymi w Polsce — zarówno w segmencie spożywczym, jak i non-food.</p>
+    <p data-lang="en">We have established relationships with Poland's largest retail chains — both food and non-food segments.</p>
   </div>
   <div class="logos-grid reveal">
     <div class="logo-placeholder"><span data-lang="pl">Partner sieci</span><span data-lang="en">Retail partner</span></div>
@@ -440,13 +340,11 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
         <textarea name="message" class="form-input" data-lang="pl" placeholder="Opisz swój produkt i oczekiwania..." required></textarea>
         <textarea name="message" class="form-input" data-lang="en" placeholder="Describe your product and expectations..." required></textarea>
       </div>
-      <div id="formSuccess" style="display:none;padding:1rem;border:1px solid var(--gold);color:var(--gold);font-size:0.85rem;margin-bottom:1rem">
-        <span data-lang="pl">✓ Wiadomość wysłana! Odezwiemy się wkrótce.</span>
-        <span data-lang="en">✓ Message sent! We will get back to you soon.</span>
+      <div id="formSuccess" style="display:none;padding:1rem;border:1px solid #c9a84c;color:#c9a84c;font-size:0.85rem;margin-bottom:1rem">
+        ✓ Wiadomość wysłana! / Message sent!
       </div>
       <div id="formError" style="display:none;padding:1rem;border:1px solid #e05050;color:#e05050;font-size:0.85rem;margin-bottom:1rem">
-        <span data-lang="pl">✗ Błąd wysyłania. Napisz bezpośrednio na contact@tradegate.pl</span>
-        <span data-lang="en">✗ Sending failed. Please write to contact@tradegate.pl</span>
+        ✗ Błąd wysyłania. Napisz na: contact@tradegate.pl
       </div>
       <button type="submit" class="form-submit" data-lang="pl">Wyślij wiadomość</button>
       <button type="submit" class="form-submit" data-lang="en">Send message</button>
@@ -459,9 +357,17 @@ footer p{font-size:0.72rem;color:var(--white-15);letter-spacing:0.05em}
   <p data-lang="pl">© 2026 Trade Gate. Wszelkie prawa zastrzeżone.</p>
   <p data-lang="en">© 2026 Trade Gate. All rights reserved.</p>
 </footer>
-
 <script>
-// Formspree
+function setLang(l){
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    el.style.display=el.getAttribute('data-lang')===l?'':'none';
+  });
+  document.querySelectorAll('.lang-btn').forEach(b=>{
+    b.classList.toggle('active',b.textContent===l.toUpperCase());
+  });
+}
+setLang('pl');
+
 document.getElementById('contactForm').addEventListener('submit',async function(e){
   e.preventDefault();
   const successEl=document.getElementById('formSuccess');
@@ -471,24 +377,19 @@ document.getElementById('contactForm').addEventListener('submit',async function(
   successEl.style.display='none';
   errorEl.style.display='none';
   try{
-    const data=new FormData(this);
     const r=await fetch('https://formspree.io/f/xpqnloyd',{
       method:'POST',
-      body:data,
+      body:new FormData(this),
       headers:{'Accept':'application/json'}
     });
     if(r.ok){
       successEl.style.display='block';
-      // show both lang spans
-      successEl.querySelectorAll('span').forEach(s=>s.style.display='block');
       this.reset();
     } else {
       errorEl.style.display='block';
-      errorEl.querySelectorAll('span').forEach(s=>s.style.display='block');
     }
   } catch(err){
     errorEl.style.display='block';
-    errorEl.querySelectorAll('span').forEach(s=>s.style.display='block');
   }
   btns.forEach(b=>{b.disabled=false;b.style.opacity='1'});
 });
@@ -498,16 +399,6 @@ window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.
 const reveals=document.querySelectorAll('.reveal');
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target)}})},{threshold:0.1});
 reveals.forEach(r=>obs.observe(r));
-function setLang(l){
-  document.querySelectorAll('[data-lang]').forEach(el=>{
-    const show = el.getAttribute('data-lang')===l;
-    el.style.display = show ? '' : 'none';
-  });
-  document.querySelectorAll('.lang-btn').forEach(b=>{
-    b.classList.toggle('active',b.textContent===l.toUpperCase());
-  });
-}
-setLang('pl');
 </script>
 </body>
 </html>
