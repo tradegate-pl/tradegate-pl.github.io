@@ -15,5 +15,7 @@ jobs:
           node-version: '24'
       - run: node scripts/build.mjs
       - run: node --check assets/main.js
+      - run: node --check assets/analytics.js
+      - run: node --test scripts/analytics.test.mjs
       - run: node scripts/check.mjs
       - run: git diff --exit-code -- index.html en/index.html sitemap.xml robots.txt

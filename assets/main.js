@@ -37,6 +37,7 @@ form.addEventListener('submit',async e=>{
   const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'},signal:controller.signal});
   if(!response.ok)throw new Error('Request failed');
   status.textContent=form.dataset.success;form.reset();
+  document.dispatchEvent(new CustomEvent('tradegate:enquiry-sent'));
  }catch{status.textContent=form.dataset.error;status.classList.add('error');}
  finally{clearTimeout(timer);button.disabled=false;label.textContent=original;form.removeAttribute('aria-busy');status.hidden=false;status.focus();}
 });
