@@ -39,12 +39,7 @@ export function refineBenefits(copy){
     [
       "60 000",
       "Sklepów spożywczych największych sieci",
-      "Skala sieciowego handlu spożywczego w Polsce."
-    ],
-    [
-      "37 mln",
-      "Mieszkańców Polski",
-      "Duży rynek dla marek z różnych kategorii."
+      "Stan na koniec 2024 r. Raport IFP z 2026 r."
     ]
   ],
   "marketNetworksTitle": "Sieci, które tworzą polski rynek",
@@ -55,7 +50,7 @@ export function refineBenefits(copy){
     "Dom, ogród i lifestyle",
     "Elektronika i AGD"
   ],
-  "marketNote": "Około 60 tys. to zaokrąglenie liczby sklepów największych sieci spożywczych na koniec 2024 r. Liczba mieszkańców: GUS, I półrocze 2026. Nazwy sieci ilustrują rynek, nie listę klientów Trade Gate.",
+  "marketNote": "Około 60 tys. to zaokrąglenie liczby sklepów największych sieci spożywczych na koniec 2024 r., według raportu IFP z 2026 r. Drogerie i sieci niespożywcze są dodatkowymi kanałami rynku. Nazwy ilustrują rynek, nie listę klientów Trade Gate.",
   "marketSources": "Źródła danych i ich zakres",
   "marketSourceText": "Liczba sklepów: Instytut Finansów Publicznych, raport z 2 marca 2026 r., s. 11 i załącznik 1. Raport wskazuje ok. 62 174 sklepy ogólnospożywcze największych sieci na koniec 2024 r.; na stronie zaokrąglamy do ok. 60 tys. Obejmuje handel sieciowy i franczyzowy, nie wyłącznie modern trade. Opracowanie zleciły Stowarzyszenie Ajentów i Franczyzobiorców oraz Krajowy Sekretariat Banków, Handlu i Ubezpieczeń NSZZ „Solidarność”.",
   "marketSourceLabel": "Instytut Finansów Publicznych — raport, s. 11",
@@ -77,9 +72,7 @@ export function refineBenefits(copy){
   "contactIntro": "Chcesz wejść na polski rynek, znaleźć importera lub rozwinąć sprzedaż w sieciach? Przedstaw nam swoją markę.",
   "formTitle": "Zacznijmy od rozmowy",
   "formNote": "Link do oferty i kilka zdań o Twoim celu wystarczą na początek.",
-  "submit": "Porozmawiajmy o współpracy",
-  "marketPopulationText": "Liczba mieszkańców: GUS, Sytuacja społeczno-gospodarcza kraju, publikacja 23.09.2026. Wstępny szacunek na koniec I półrocza 2026 r.: 37,2 mln, zaokrąglone do ok. 37 mln. Obie liczby opisują skalę rynku, a nie zasięg Trade Gate ani gwarantowaną dystrybucję. Drogerie i sieci niespożywcze są dodatkowymi kanałami, poza podaną liczbą sklepów.",
-  "marketPopulationLabel": "GUS — dane za I półrocze 2026"
+  "submit": "Porozmawiajmy o współpracy"
 });
  Object.assign(copy.en,{
   "title": "Trade Gate — Your product. Our relationships. Polish retail.",
@@ -120,12 +113,7 @@ export function refineBenefits(copy){
     [
       "60,000",
       "Grocery stores in major retail chains",
-      "The scale of Poland’s chain grocery retail market."
-    ],
-    [
-      "37m",
-      "People living in Poland",
-      "A large consumer market across product categories."
+      "Year-end 2024 data. IFP report dated 2026."
     ]
   ],
   "marketNetworksTitle": "Retailers shaping the Polish market",
@@ -136,7 +124,7 @@ export function refineBenefits(copy){
     "Home, garden & lifestyle",
     "Electronics & appliances"
   ],
-  "marketNote": "Around 60,000 is a rounded figure for major grocery chains at the end of 2024. Population: Statistics Poland, first half of 2026. Retailer names illustrate the market, not a Trade Gate client list.",
+  "marketNote": "Around 60,000 is a rounded figure for major grocery chains at year-end 2024, from the IFP report dated 2026. Drugstores and non-grocery chains are additional market channels. Names illustrate the market, not a Trade Gate client list.",
   "marketSources": "Data sources and scope",
   "marketSourceText": "Store count: Institute of Public Finance (Poland), report dated 2 March 2026, p. 11 and Appendix 1. It reports approximately 62,174 grocery stores operated by major chains at year-end 2024; rounded here to around 60,000. Includes chain and franchise retail, rather than modern trade alone. Commissioned by the Association of Agents and Franchisees and the National Secretariat of Banks, Commerce and Insurance of NSZZ Solidarność.",
   "marketSourceLabel": "Institute of Public Finance — report, p. 11",
@@ -158,9 +146,7 @@ export function refineBenefits(copy){
   "contactIntro": "Entering Poland, looking for an importer or growing retail sales? Introduce us to your brand.",
   "formTitle": "Let’s start a conversation",
   "formNote": "A link to your offer and a few words about your goals are enough to get started.",
-  "submit": "Discuss a partnership",
-  "marketPopulationText": "Population: Statistics Poland, Socio-economic situation of the country, published 23 September 2026. Preliminary estimate at the end of the first half of 2026: 37.2 million, rounded to around 37 million. Both figures describe market scale, not Trade Gate’s coverage or guaranteed distribution. Drugstores and non-grocery chains are additional channels outside the store count.",
-  "marketPopulationLabel": "Statistics Poland — first half of 2026"
+  "submit": "Discuss a partnership"
 });
  const steps={
   "pl": [
