@@ -34,6 +34,8 @@ DM Sans and Instrument Serif are hosted locally under their included SIL Open Fo
 
 The B2B revision makes the service explicit in the opening, defines scope and work outcomes, explains fit and enquiry follow-up, and adds an optional website/catalogue field. Audience calls to action preselect the development stage. The website field accepts a bare domain without blocking the enquiry.
 
+The owner confirmed that Trade Gate is a commercial intermediary and does not buy goods. This is explicit in the PL/EN opening, scope and FAQ. No additional import, logistics or geographic capabilities are inferred from that confirmation.
+
 ## Review before production
 
 The redesign is prepared on a separate branch for review. Confirm the final copy, current contact details and privacy information. A real Formspree delivery test remains to be performed with the owner; client-side validation alone does not prove inbox delivery.
