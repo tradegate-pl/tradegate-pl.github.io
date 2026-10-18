@@ -30,7 +30,7 @@ Only the user-confirmed 15 years of trade experience is presented as a numeric b
 
 The hero artwork was generated with the built-in ImageGen tool. The working brief: a brushed brass architectural gateway linking premium unbranded consumer products with abstract retail shelving, on a deep navy set with ivory light and restrained editorial photography. The served WebP is approximately 157 KB; a JPEG is provided for social previews.
 
-DM Sans and Instrument Serif are hosted locally under their included SIL Open Font Licenses. The TG square-and-arch mark preserves the existing identity; category illustrations are CSS work.
+DM Sans and Instrument Serif are hosted locally under their included SIL Open Font Licenses. The TG square-and-arch mark preserves the existing identity. The category illustrations were generated using the built-in ImageGen tool and delivered as locally hosted WebP assets (approximately 38–117 KB each). They are unbranded illustrative product compositions, not client products or case-study evidence. No text is embedded in the images; all labels and captions have Polish and English versions.
 
 The B2B revision makes the service explicit in the opening, defines scope and work outcomes, explains fit and enquiry follow-up, and adds an optional website/catalogue field. Audience calls to action preselect the development stage. The website field accepts a bare domain without blocking the enquiry.
 

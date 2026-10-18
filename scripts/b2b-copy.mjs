@@ -49,6 +49,12 @@ export function refineB2B(copy) {
  copy.en.categories[2]=['Beauty & lifestyle','Cosmetics, personal care and lifestyle products.','Positioning and an offer for the right channel.','We prepare the commercial proposition with your product category, audience and target sales channel in mind.','Cosmetics · Personal care · Lifestyle'];
  copy.pl.categories[1][1]='Akcesoria, dekoracje oraz produkty do domu i ogrodu.';
  copy.en.categories[1][1]='Accessories, decoration, home and garden products.';
+ copy.pl.categories[1][4]='Dom · Dekoracje · Tekstylia';
+ copy.en.categories[1][4]='Home · Decor · Textiles';
+ copy.pl.categoryIllustration='Ilustracja kategorii';
+ copy.en.categoryIllustration='Category illustration';
+ copy.pl.categoryAlt=['Ilustracja kategorii: oliwa, makaron i przetwory.','Ilustracja kategorii: lampa, ceramika i tekstylia domowe.','Ilustracja kategorii: kosmetyki w dozowniku, tubce i słoiczku.','Ilustracja kategorii: słuchawki, głośnik i opakowanie prezentowe.'];
+ copy.en.categoryAlt=['Category illustration: olive oil, pasta and preserves.','Category illustration: a lamp, pottery and home textiles.','Category illustration: skincare in a pump bottle, tube and jar.','Category illustration: headphones, a speaker and a gift box.'];
  copy.pl.categories[3][1]='Elektronika użytkowa, akcesoria, produkty sezonowe i prezenty.';
  copy.en.categories[3][1]='Consumer electronics, accessories, seasonal products and gifts.';
  copy.pl.faqs=copy.pl.faqs.filter(a=>!a[0].startsWith('Co przygotować'));
