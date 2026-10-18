@@ -24,7 +24,7 @@ Accessible interaction: keyboard-operated tabs with arrow/Home/End support, mobi
 
 The site includes canonical and alternate-language URLs, structured organization data, social preview artwork, robots.txt and a sitemap. These are technical SEO foundations; traffic and leads have not been measured or guaranteed.
 
-Only the user-confirmed 15 years of experience is presented as a numeric business credential. The owner confirmed work across virtually all product categories; the displayed groups are examples. No client logos, testimonials or invented results are included. The name panel is typographic, not a portrait. Product artwork is illustrative and does not depict actual client brands.
+Only the user-confirmed 15 years of trade experience is presented as a numeric business credential underpinning the company's competence; it is not a claim about the company's incorporation date. The owner confirmed work across virtually all product categories; the displayed groups are examples. The site presents Trade Gate as a company, with a company email and no founder/person schema or personal branding. No client logos, testimonials or invented results are included. Product artwork is illustrative and does not depict actual client brands.
 
 ## Assets
 

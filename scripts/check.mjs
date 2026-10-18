@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 let checks=0;
 for(const [file,lang] of [['index.html','pl'],['en/index.html','en']]){
  const html=await readFile(file,'utf8');
+ assert(!/Jarosław|Jaroslaw|Chmiel|jaroslaw|"@type":"Person"|"founder"/i.test(html),`${file}: personal branding must not be present`);checks++;
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(new Set(ids).size,ids.length,`${file}: duplicate id`);checks++;
  assert.equal((html.match(/<h1\b/g)||[]).length,1,`${file}: expected one H1`);checks++;
