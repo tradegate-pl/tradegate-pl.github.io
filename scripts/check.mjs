@@ -18,7 +18,7 @@ for(const [file,lang] of [['index.html','pl'],['en/index.html','en']]){
   await access(resolve(dirname(file),target));checks++;
  }
  for(const m of html.matchAll(/<label for="([^"]+)"/g)){assert(ids.includes(m[1]),`${file}: missing form control`);checks++;}
- for(const m of html.matchAll(/aria-(?:controls|labelledby)="([^"]+)"/g)){assert(ids.includes(m[1]),`${file}: missing ARIA target`);checks++;}
+ for(const m of html.matchAll(/aria-(?:controls|labelledby|describedby)="([^"]+)"/g)){assert(ids.includes(m[1]),`${file}: missing ARIA target`);checks++;}
  assert(html.includes('https://formspree.io/f/xpqnloyd'));checks++;
  assert(!/placeholder.*partner|coming soon|wkrótce/i.test(html));checks++;
  JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);checks++;

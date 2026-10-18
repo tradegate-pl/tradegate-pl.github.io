@@ -16,6 +16,7 @@ const steps=setupTabs('[data-step]','panel-',index=>currentStep=index);
 document.querySelector('#next-step').addEventListener('click',()=>steps.activate((currentStep+1)%steps.tabs.length,true));
 setupTabs('[data-category]','category-panel-');
 document.querySelectorAll('.category-contact').forEach(a=>a.addEventListener('click',()=>{document.querySelector('#category').selectedIndex=Number(a.dataset.categoryValue)+1;}));
+document.querySelectorAll('.audience-cta').forEach(a=>a.addEventListener('click',()=>{document.querySelector('#stage').selectedIndex=Number(a.dataset.stage);}));
 
 function updateLanguageLinks(){document.querySelectorAll('.language a').forEach(a=>{const target=new URL(a.href);target.hash=location.hash;a.href=target.href;});}
 updateLanguageLinks();
