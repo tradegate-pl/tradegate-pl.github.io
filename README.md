@@ -36,8 +36,14 @@ The B2B revision makes the service explicit in the opening, defines scope and wo
 
 The owner confirmed that Trade Gate is a commercial intermediary, does not buy goods, has strong relationships with Polish modern trade and helps find importers in Poland. Both languages explain the intermediary role and importer search; no purchasing, inventory, logistics or broader geographic capabilities are implied.
 
-The opening prioritises relationships, sales opportunities and importer search. The market section replaces generic benefit cards with dated, sourced examples of Polish retail scale: Biedronka (3,897 at 30 June 2026), Dino (3,283 at 30 September 2026) and Żabka (13,000th store opened 8 September 2026). These are explicitly market examples, not a client list or a promise of access to every store. The four-stage process is kept concise. Client success stories are deferred until permissions are available. No invented projects, people photographs or implied testimonials have been added.
+The opening prioritises relationships, sales opportunities and importer search. The market section presents rounded, aggregate grocery-network estimates (about 60,000 stores, including about 30,000 in modern grocery formats), plus 26 representative retailer names across food, beauty, home/garden/lifestyle and electronics. These are market examples, not a client list or a guarantee of distribution. No individual chain store counts are displayed. The four-stage process is kept concise. Client success stories are deferred until permissions are available. No invented projects, people photographs or implied testimonials have been added.
 
 ## Production
 
 The bilingual site is hosted on GitHub Pages at https://tradegate.pl/. Changes are reviewed and validated before merging to main. Retail figures include dates and source links so they can be maintained as the market changes. Responsive checks cover desktop, tablet and phone widths in both languages; device emulation does not replace checking a physical handset.
+
+## Aggregate market estimate
+
+Source: Żabka Group Annual Report 2025, published March 2026, printed p. 25 (PDF page 27), company analysis based on PMR estimates for 2025: https://zabkagroup.com/wp-content/uploads/2026/03/Zabka-Group-2025-Annual-Report.pdf#page=27
+
+Our calculation sums mutually exclusive grocery formats: modern convenience 12,600 + small chains 29,200 + hypermarkets approximately 450 + supermarkets 8,100 + discounters 9,100 = approximately 59,450; rounded to 60,000. The modern-format subset excludes small chains: approximately 30,250; rounded to 30,000. The second figure is part of the first. Neither includes forecourts, independent traditional trade or non-grocery retailers. Both are estimates for 2025, not a complete 2026 census of all modern trade. The visible note and source disclosure explain the scope in PL and EN. Retailer names are presented as text for visual consistency, without implying partner status.

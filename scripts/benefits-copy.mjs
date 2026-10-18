@@ -31,17 +31,34 @@ export function refineBenefits(copy){
   ],
   "fitTitle": "Twoja marka. Nasze wsparcie handlowe.",
   "fitText": "Działamy jako pośrednik handlowy. Reprezentujemy interesy producenta i wspieramy rozwój relacji z odbiorcami. Trade Gate nie kupuje towaru.",
-  "marketTag": "POLSKI RYNEK / SKALA MOŻLIWOŚCI",
-  "marketTitle": "Tysiące sklepów.<br><em>Miejsce dla Twojej marki?</em>",
-  "marketIntro": "Biedronka, Dino i Żabka pokazują skalę polskiego handlu. A to tylko część rynku — dla Twojego produktu szukamy właściwego kierunku także w drogeriach, sieciach specjalistycznych i innych formatach.",
-  "marketUnit": "sklepów w Polsce",
-  "marketDates": [
-    "Stan na 30.06.2026",
-    "Stan na 30.09.2026",
-    "13 000. sklep otwarty 08.09.2026"
+    "marketTag": "POLSKI RYNEK / SKALA MOŻLIWOŚCI",
+  "marketTitle": "Duży rynek.<br><em>Wiele dróg do klienta.</em>",
+  "marketIntro": "Od dyskontów i supermarketów po convenience, drogerie i sieci specjalistyczne. Pomagamy znaleźć kanały sprzedaży dopasowane do Twojego produktu.",
+  "marketApprox": "około",
+  "marketStats": [
+    [
+      "60 000",
+      "Sklepów spożywczych w sieciach",
+      "Szeroki rynek, obejmujący także mniejsze sieci."
+    ],
+    [
+      "30 000",
+      "W tym nowoczesne formaty spożywcze",
+      "Dyskonty, supermarkety, hipermarkety i modern convenience."
+    ]
   ],
-  "marketNote": "Przykłady skali rynku, nie lista klientów Trade Gate. Dobór sieci i możliwości sprzedaży zależą od produktu; o listingu decyduje każda sieć indywidualnie.",
-  "marketSources": "Źródła danych o sieciach",
+  "marketNetworksTitle": "Sieci, które tworzą polski rynek",
+  "marketNetworksIntro": "Przykłady kanałów dla różnych kategorii produktów.",
+  "marketGroups": [
+    "Żywność i convenience",
+    "Kosmetyki i pielęgnacja",
+    "Dom, ogród i lifestyle",
+    "Elektronika i AGD"
+  ],
+  "marketNote": "Liczby to zaokrąglone szacunki dla handlu spożywczego za 2025 r. Drogerie i sieci specjalistyczne są dodatkowymi kanałami rynku. Nazwy ilustrują rynek, nie listę klientów Trade Gate.",
+  "marketSources": "Źródło i zakres szacunku",
+  "marketSourceText": "Obliczenie własne na podstawie danych o formatach rynku w Żabka Group Annual Report 2025, s. 25 (publikacja: marzec 2026; analiza spółki na podstawie szacunków PMR za 2025 r.). Suma kategorii sieciowych: ok. 59,45 tys. sklepów, w tym ok. 30,25 tys. w dyskontach, supermarketach, hipermarketach i modern convenience. Zaokrąglone do 60 tys. i 30 tys. Druga liczba jest częścią pierwszej. Bez stacji paliw, niezależnego handlu tradycyjnego oraz sieci niespożywczych. To skala rynku, a nie deklarowany zasięg Trade Gate ani gwarancja dystrybucji.",
+  "marketSourceLabel": "Raport źródłowy — s. 25",
   "marketCta": "Sprawdźmy możliwości Twojego produktu",
   "processTag": "02 / OD KONTAKTU DO WSPÓŁPRACY",
   "processTitle": "Właściwe relacje.<br><em>Konsekwentne działanie.</em>",
@@ -93,17 +110,34 @@ export function refineBenefits(copy){
   ],
   "fitTitle": "Your brand. Our commercial support.",
   "fitText": "We act as a commercial intermediary. We represent the manufacturer’s interests and support relationships with trade customers. Trade Gate does not buy products.",
-  "marketTag": "POLISH RETAIL / THE MARKET OPPORTUNITY",
-  "marketTitle": "Thousands of stores.<br><em>A place for your brand?</em>",
-  "marketIntro": "Biedronka, Dino and Żabka illustrate the scale of Polish retail. There is more to the market: we also explore drugstores, specialist chains and other formats to find the right direction for your product.",
-  "marketUnit": "stores in Poland",
-  "marketDates": [
-    "As at 30 Jun 2026",
-    "As at 30 Sep 2026",
-    "13,000th store opened 8 Sep 2026"
+    "marketTag": "POLISH RETAIL / THE MARKET OPPORTUNITY",
+  "marketTitle": "A large market.<br><em>Many routes to customers.</em>",
+  "marketIntro": "From discounters and supermarkets to convenience stores, drugstores and specialist chains. We help find sales channels suited to your product.",
+  "marketApprox": "around",
+  "marketStats": [
+    [
+      "60,000",
+      "Grocery stores in retail chains",
+      "The wider network, including smaller retail chains."
+    ],
+    [
+      "30,000",
+      "Of these, modern grocery formats",
+      "Discounters, supermarkets, hypermarkets and modern convenience."
+    ]
   ],
-  "marketNote": "Examples of market scale, not a Trade Gate client list. Suitable retailers and sales opportunities depend on the product; each retailer makes its own listing decisions.",
-  "marketSources": "Sources for retailer figures",
+  "marketNetworksTitle": "Retailers shaping the Polish market",
+  "marketNetworksIntro": "Examples of sales channels across product categories.",
+  "marketGroups": [
+    "Food & convenience",
+    "Beauty & personal care",
+    "Home, garden & lifestyle",
+    "Electronics & appliances"
+  ],
+  "marketNote": "Figures are rounded estimates for grocery retail in 2025. Drugstores and specialist chains provide additional market channels. Names illustrate the market, not a Trade Gate client list.",
+  "marketSources": "Source and estimate scope",
+  "marketSourceText": "Our calculation from market-format data in Żabka Group Annual Report 2025, p. 25 (published March 2026; company analysis based on PMR estimates for 2025). Chain formats total approximately 59,450 stores, including approximately 30,250 across discounters, supermarkets, hypermarkets and modern convenience. Rounded to 60,000 and 30,000. The second figure is part of the first. Excludes forecourts, independent traditional stores and non-grocery chains. Figures describe the market, not Trade Gate’s coverage or guaranteed distribution.",
+  "marketSourceLabel": "Source report — p. 25",
   "marketCta": "Let’s explore your product’s potential",
   "processTag": "02 / FROM CONNECTION TO COLLABORATION",
   "processTitle": "The right relationships.<br><em>Consistent action.</em>",
