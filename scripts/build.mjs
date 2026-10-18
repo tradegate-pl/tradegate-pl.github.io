@@ -28,32 +28,42 @@ en: {
 };
 refineB2B(copy);
 refineBenefits(copy);
-// Store counts are dated market examples, not claimed client relationships.
-const retailers=[
-  {
-    "name": "Biedronka",
-    "count": {
-      "pl": "3 897",
-      "en": "3,897"
-    },
-    "source": "https://www.jeronimomartins.com/en/investors/jm-in-numbers/performance-business-unit/"
-  },
-  {
-    "name": "Dino",
-    "count": {
-      "pl": "3 283",
-      "en": "3,283"
-    },
-    "source": "https://grupadino.pl/siec-dino-liczy-3283-sklepy-256-nowych-sklepow-otwartych-od-poczatku-2026-r/"
-  },
-  {
-    "name": "Żabka",
-    "count": {
-      "pl": "13 000",
-      "en": "13,000"
-    },
-    "source": "https://zabkagroup.com/pl/zabka-otworzyla-13-000-sklep-nowoczesna-placowka-zlokalizowana-jest-w-kultowym-warszawskim-kompleksie/"
-  }
+// Representative retailers describe the market, not claimed client relationships.
+const retailGroups=[
+  [
+    "Biedronka",
+    "Lidl",
+    "Dino",
+    "Żabka",
+    "Kaufland",
+    "Auchan",
+    "Carrefour",
+    "ALDI",
+    "Netto",
+    "Intermarché",
+    "POLOmarket",
+    "Lewiatan"
+  ],
+  [
+    "Rossmann",
+    "Hebe",
+    "dm",
+    "Super-Pharm"
+  ],
+  [
+    "Action",
+    "Pepco",
+    "JYSK",
+    "IKEA",
+    "Castorama",
+    "Leroy Merlin",
+    "OBI"
+  ],
+  [
+    "Media Expert",
+    "RTV EURO AGD",
+    "MediaMarkt"
+  ]
 ];
 const mark = '<svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="3" y="3" width="34" height="34" stroke="currentColor" stroke-width="1.5"/><path d="M9 18 Q20 4 31 18" stroke="currentColor" stroke-width="1.5"/><text x="20" y="31" font-family="Georgia,serif" font-size="11" font-weight="600" letter-spacing="1" fill="currentColor" text-anchor="middle">TG</text></svg>';
 const arrow = '<span aria-hidden="true">↗</span>';
@@ -67,7 +77,7 @@ for (const [lang,c] of Object.entries(copy)) {
 <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span class="tiny-line"></span>${c.eyebrow}</p><h1 id="hero-title">${c.headline}</h1><p class="hero-intro">${c.intro}</p><p class="hero-proof">${c.heroProof}</p><div class="hero-actions"><a class="button button-gold" href="#contact">${c.cta}${arrow}</a><a class="text-link" href="#scope">${c.secondary}<span aria-hidden="true">↓</span></a></div></div><figure class="hero-art"><img src="${base}assets/retail-gateway.webp" alt="${c.imageAlt}" width="1536" height="1024" fetchpriority="high"><figcaption><span class="caption-index">TG / 01</span>${c.imageCaption}</figcaption></figure><div class="hero-bottom"><span>${c.heroFoot[0]}</span><a href="#approach">${c.heroFoot[1]}<span aria-hidden="true">↓</span></a></div></section>
 <div class="credentials"><div class="experience-number">15</div><div class="experience-label">${c.years}<span>${c.experience}</span></div><div class="scope-list">${c.strips.map(v=>`<span>${v}</span>`).join('')}</div><span class="credential-seal" aria-hidden="true">PL<br><span>↗</span></span></div>
 <section class="approach section-light section-pad" id="approach"><div class="section-top"><p class="eyebrow">${c.approachTag}</p><span class="section-coordinate" aria-hidden="true">52°13′ N / 21°00′ E</span></div><div class="approach-intro"><h2>${c.approachTitle}</h2><div class="approach-prose"><span class="graphic-plus" aria-hidden="true">+</span><p>${c.approachText}</p></div></div><div class="audiences">${c.audience.map((a,i)=>`<article><p class="audience-label"><span>0${i+1}</span>${a[0]}</p><h3>${a[1]}</h3><p>${a[2]}</p><a href="#contact" class="text-link audience-cta" data-stage="${i+1}">${c.audienceCta[i]}${arrow}</a></article>`).join('')}</div><div class="fit-note"><h3>${c.fitTitle}</h3><p>${c.fitText}</p></div></section>
-<section class="scope market section-light section-pad" id="scope" aria-labelledby="market-title"><p class="eyebrow">${c.marketTag}</p><div class="split-heading"><h2 id="market-title">${c.marketTitle}</h2><p>${c.marketIntro}</p></div><div class="market-cards">${retailers.map((r,i)=>`<article><div class="market-retailer"><span class="market-index" aria-hidden="true">0${i+1}</span><h3>${r.name}</h3></div><p class="market-figure">${r.count[lang]}</p><p class="market-unit">${c.marketUnit}</p><p class="market-date">${c.marketDates[i]}</p></article>`).join('')}</div><div class="market-bottom"><div><p class="market-note">${c.marketNote}</p><details class="market-sources"><summary>${c.marketSources}</summary><ul>${retailers.map((r,i)=>`<li><a href="${r.source}" target="_blank" rel="noopener">${r.name} — ${c.marketDates[i]} ${arrow}</a></li>`).join('')}</ul></details></div><a href="#contact" class="text-link">${c.marketCta}${arrow}</a></div></section>
+<section class="scope market section-light section-pad" id="scope" aria-labelledby="market-title"><p class="eyebrow">${c.marketTag}</p><div class="split-heading"><h2 id="market-title">${c.marketTitle}</h2><p>${c.marketIntro}</p></div><div class="market-stats">${c.marketStats.map(s=>`<article><p class="market-approx">${c.marketApprox}</p><p class="market-total">${s[0]}</p><h3>${s[1]}</h3><p class="market-stat-description">${s[2]}</p></article>`).join('')}</div><div class="market-network-heading"><h3>${c.marketNetworksTitle}</h3><p>${c.marketNetworksIntro}</p></div><div class="market-networks">${retailGroups.map((names,i)=>`<article><h4>${c.marketGroups[i]}</h4><ul>${names.map(name=>`<li>${name}</li>`).join('')}</ul></article>`).join('')}</div><div class="market-bottom"><div><p class="market-note">${c.marketNote}</p><details class="market-sources"><summary>${c.marketSources}</summary><p>${c.marketSourceText}</p><a href="https://zabkagroup.com/wp-content/uploads/2026/03/Zabka-Group-2025-Annual-Report.pdf#page=27" target="_blank" rel="noopener">${c.marketSourceLabel} ${arrow}</a></details></div><a href="#contact" class="text-link">${c.marketCta}${arrow}</a></div></section>
 <section class="process section-pad" id="process"><div class="section-top"><p class="eyebrow">${c.processTag}</p><span class="section-coordinate">TRADE GATE METHOD</span></div><div class="split-heading"><h2>${c.processTitle}</h2><p>${c.processIntro}</p></div><div class="process-tabs" role="tablist" aria-label="${c.nav[1]}">${c.steps.map((s,i)=>`<button role="tab" id="step-${i}" aria-controls="panel-${i}" aria-selected="${i===0}" tabindex="${i===0?0:-1}" data-step="${i}"><span>0${i+1}</span>${s[0]}<span class="tab-arrow" aria-hidden="true">↗</span></button>`).join('')}</div>${c.steps.map((s,i)=>`<div class="process-panel" id="panel-${i}" role="tabpanel" aria-labelledby="step-${i}" tabindex="0" ${i?'hidden':''}><div class="process-visual" aria-hidden="true"><div class="portal portal-one"></div><div class="portal portal-two"></div><div class="portal portal-three"></div><span class="process-big-number">0${i+1}</span><span class="visual-caption">${s[0].toUpperCase()} / TRADE GATE</span></div><div class="process-text"><p class="eyebrow">0${i+1} / ${s[0].toUpperCase()}</p><h3>${s[1]}</h3><p>${s[2]}</p><ul>${s.slice(4).map(t=>`<li>${t}</li>`).join('')}</ul><div class="deliverable"><span>${c.deliverable}</span><strong>${s[3]}</strong></div></div></div>`).join('')}<div class="process-bottom"><p>${c.processNote}</p><button class="text-link" id="next-step">${c.next}<span aria-hidden="true">→</span></button></div></section>
 <section class="categories section-light section-pad" id="categories"><div class="section-top"><p class="eyebrow">${c.categoriesTag}</p><span aria-hidden="true">FOOD / NON-FOOD</span></div><div class="split-heading"><h2>${c.categoriesTitle}</h2><p>${c.categoriesIntro}</p></div><div class="category-layout"><div class="category-options" role="tablist" aria-label="${c.nav[2]}">${c.categories.map((a,i)=>`<button role="tab" id="category-${i}" aria-controls="category-panel-${i}" aria-selected="${i===0}" tabindex="${i===0?0:-1}" data-category="${i}"><span class="category-number">0${i+1}</span><span><strong>${a[0]}</strong><small>${a[1]}</small></span><span class="category-arrow" aria-hidden="true">↗</span></button>`).join('')}</div><div class="category-stage">${c.categories.map((a,i)=>`<div role="tabpanel" tabindex="0" id="category-panel-${i}" aria-labelledby="category-${i}" class="category-panel category-style-${i}" ${i?'hidden':''}><div class="category-art"><img src="${base}assets/category-${['food','home','beauty','tech'][i]}.webp" alt="${c.categoryAlt[i]}" width="1536" height="1024" loading="lazy" decoding="async"></div><p class="category-image-caption">${c.categoryIllustration} / ${a[4]}</p><div class="category-content"><h3>${a[2]}</h3><p>${a[3]}</p><a href="#contact" class="text-link category-contact" data-category-value="${i}">${c.categoryCta}${arrow}</a></div></div>`).join('')}</div></div><p class="other-category">${c.otherCategory} <a href="#contact">${c.otherLink} ${arrow}</a></p></section>
 <section class="personal section-pad"><div class="identity-card"><p class="eyebrow">TRADE GATE / WARSZAWA</p><p class="identity-name">TRADE<br><em>GATE.</em></p><div class="identity-experience"><strong>PL</strong><span>${c.marketLabel}</span></div><p class="identity-label">${c.identityLabel}</p><small>${c.identityCaption}</small></div><div class="personal-content"><p class="eyebrow">${c.personalTag}</p><h2>${c.personalTitle}</h2><p>${c.personalText}</p><ul>${c.personalValues.map(v=>`<li>${v}</li>`).join('')}</ul><div class="person"><div><strong>Trade Gate</strong><span>${c.personalRole}</span></div><a href="mailto:contact@tradegate.pl" class="circle-link" aria-label="${c.personalCta}">${arrow}</a></div></div></section>
