@@ -18,7 +18,7 @@ Edit bilingual content and metadata in `scripts/build.mjs`, `scripts/b2b-copy.mj
 
 ## Delivery
 
-The contact form preserves the existing Formspree endpoint. Each language has exactly one set of fields; sending, success, failure and timeout states are handled. Required fields have explicit labels. No live test enquiry was sent to the business inbox during development.
+The contact form preserves the existing Formspree endpoint. Each language has exactly one set of fields; sending, success, failure and timeout states are handled. Required fields have explicit labels. Owner-authorised live tests confirmed PL and EN inbox delivery after the Formspree sender was added to the owner's safe senders.
 
 Accessible interaction: keyboard-operated tabs with arrow/Home/End support, mobile navigation with Escape support, native FAQ disclosure elements, focus indicators, reduced-motion support and a modal privacy notice.
 
@@ -34,10 +34,10 @@ DM Sans and Instrument Serif are hosted locally under their included SIL Open Fo
 
 The B2B revision makes the service explicit in the opening, defines scope and work outcomes, explains fit and enquiry follow-up, and adds an optional website/catalogue field. Audience calls to action preselect the development stage. The website field accepts a bare domain without blocking the enquiry.
 
-The owner confirmed that Trade Gate is a commercial intermediary and does not buy goods. This is explicit in the PL/EN opening, scope and FAQ. No additional import, logistics or geographic capabilities are inferred from that confirmation.
+The owner confirmed that Trade Gate is a commercial intermediary, does not buy goods, has strong relationships with Polish modern trade and helps find importers in Poland. Both languages explain the intermediary role and importer search; no purchasing, inventory, logistics or broader geographic capabilities are implied.
 
-Benefits and process have separate roles: the benefits cards explain the manufacturer's decisions and preparation; the four-stage process explains the work and its outputs. Client success stories are explicitly deferred until permissions are available. No invented projects, people photographs or implied testimonials have been added.
+The opening prioritises relationships, sales opportunities and importer search. The market section replaces generic benefit cards with dated, sourced examples of Polish retail scale: Biedronka (3,897 at 30 June 2026), Dino (3,283 at 30 September 2026) and Żabka (13,000th store opened 8 September 2026). These are explicitly market examples, not a client list or a promise of access to every store. The four-stage process is kept concise. Client success stories are deferred until permissions are available. No invented projects, people photographs or implied testimonials have been added.
 
-## Review before production
+## Production
 
-The redesign is prepared on a separate branch for review. Confirm the final copy, current contact details and privacy information. A real Formspree delivery test remains to be performed with the owner; client-side validation alone does not prove inbox delivery.
+The bilingual site is hosted on GitHub Pages at https://tradegate.pl/. Changes are reviewed and validated before merging to main. Retail figures include dates and source links so they can be maintained as the market changes. Responsive checks cover desktop, tablet and phone widths in both languages; device emulation does not replace checking a physical handset.

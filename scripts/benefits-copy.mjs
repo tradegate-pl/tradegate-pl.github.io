@@ -1,61 +1,182 @@
+// Current commercial positioning. Retail figures describe the market, not our client list.
 export function refineBenefits(copy){
  Object.assign(copy.pl,{
-  approachTitle:'Wiesz, gdzie zacząć.<br>Wiesz, co przygotować.<br><em>Wiesz, co dalej.</em>',
-  approachText:'Dobry produkt to punkt wyjścia. Pomagamy wybrać kanały warte rozważenia, przygotować propozycję dla kupca i uporządkować dalsze działania. Dzięki temu masz podstawę do kolejnych decyzji o sprzedaży w Polsce.',
-  scopeTag:'KORZYŚCI DLA TWOJEJ FIRMY',scopeTitle:'Lepsze przygotowanie.<br><em>Jaśniejsze decyzje.</em>',
-  scopeIntro:'Współpraca łączy ocenę produktu, przygotowanie rozmów i rozwój relacji z siecią. W każdym obszarze chodzi o konkretną decyzję po Twojej stronie. Zakres dobieramy do etapu rozwoju marki.',
-  scope:[
-   ['Wybierasz kierunek wejścia','Ocena produktu i dobór kanałów pomagają skupić pracę na sieciach i formatach, które warto rozważyć dla Twojej oferty.','Wiesz: gdzie skierować ofertę i co przygotować przed kontaktem.'],
-   ['Lepiej przygotowujesz rozmowę','Przekładamy cechy produktu na propozycję handlową dla wybranego kanału. Porządkujemy argumenty, poziom cen i warunki do omówienia z kupcem.','Wiesz: jak przedstawić produkt i jakie warunki omówić.'],
-   ['Planujesz kolejne działania','Ustalenia z rozmów i obserwacja sprzedaży pomagają określić przeszkody, priorytety oraz następne kroki we współpracy z siecią.','Wiesz: co wymaga uwagi i na czym oprzeć dalszy rozwój.']
+  "title": "Trade Gate — Twój produkt. Nasze relacje. Polski rynek.",
+  "description": "15 lat doświadczenia i silne relacje z polskim handlem. Łączymy producentów z kupcami, wspieramy rozwój sprzedaży i pomagamy znaleźć importerów w Polsce.",
+  "eyebrow": "TWÓJ PARTNER W POLSKIM HANDLU",
+  "headline": "Twój produkt.<br>Nasze relacje.<br><em>Polski rynek.</em>",
+  "intro": "Wykorzystujemy 15 lat doświadczenia i silne relacje z polskimi sieciami handlowymi, aby pomagać producentom rozwijać sprzedaż w Polsce. Łączymy marki z kupcami, wspieramy rozmowy handlowe i pomagamy znaleźć importerów dopasowanych do produktu.",
+  "heroProof": "Pośrednictwo handlowe · Relacje z kupcami · Rozwój sprzedaży",
+  "cta": "Porozmawiajmy o Twojej marce",
+  "secondary": "Zobacz potencjał rynku",
+  "experience": "Znajomość rynku.<br>Relacje w handlu.",
+  "strips": [
+    "Relacje z kupcami",
+    "Poszukiwanie importerów",
+    "Rozwój sprzedaży"
   ],
-  processTag:'02 / JAK PRACUJEMY NAD TWOIM PROJEKTEM',
-  processTitle:'Każdy etap<br><em>porządkuje kolejną decyzję.</em>',
-  processIntro:'Zaczynamy od produktu i celu. Kolejne działania ustalamy na podstawie analizy oraz przebiegu rozmów.',
-  scopePhases:['Kierunek','Przygotowanie rozmowy','Kolejne działania'],
-  deliverable:'PODSTAWA DO KOLEJNEGO KROKU',
-  personalTitle:'Znajomość rynku.<br><em>Przygotowanie do rozmów.</em>',
-  personalText:'Kompetencje Trade Gate opierają się na 15 latach doświadczenia w handlu i pracy w szerokim przekroju kategorii. Wykorzystujemy je, żeby ocenić dopasowanie produktu, przygotować argumentację dla kupca i uporządkować działania po rozmowach.',
-  personalValues:['Ocena dopasowania do kanału','Argumentacja handlowa','Uporządkowane kolejne kroki'],
-  identityLabel:'Od potencjału produktu do planu działania.',
-  contactIntro:'Napisz, co produkujesz, gdzie sprzedajesz dziś i jaki kolejny krok rozważasz w Polsce. Sprawdzimy, jakie wsparcie pasuje do Twojego projektu.',
-  formNote:'Katalog lub strona marki i krótki opis celu wystarczą, żeby rozpocząć rozmowę. Zakres i warunki współpracy uzgadniamy osobno.'
- });
+  "approachTitle": "Dobry produkt zasługuje<br><em>na właściwe kontakty.</em>",
+  "approachText": "Znamy polski modern trade i realia współpracy z sieciami. Pomagamy dotrzeć do właściwych kupców, przedstawić wartość produktu i przełożyć rozmowy na rozwój biznesu.",
+  "audience": [
+    [
+      "Dla międzynarodowych producentów",
+      "Twój lokalny partner w Polsce.",
+      "Chcesz wejść na polski rynek? Łączymy Cię z kupcami i pomagamy znaleźć importerów dopasowanych do Twojej oferty. Wspieramy Cię od pierwszej rozmowy po rozwój współpracy."
+    ],
+    [
+      "Dla polskich marek",
+      "Nowe relacje. Większe możliwości.",
+      "Chcesz rozwinąć sprzedaż w sieciach? Wykorzystujemy znajomość rynku i relacje handlowe, aby wspierać rozmowy z kupcami oraz rozwój obecnych i nowych kanałów."
+    ]
+  ],
+  "fitTitle": "Twoja marka. Nasze wsparcie handlowe.",
+  "fitText": "Działamy jako pośrednik handlowy. Reprezentujemy interesy producenta i wspieramy rozwój relacji z odbiorcami. Trade Gate nie kupuje towaru.",
+  "marketTag": "POLSKI RYNEK / SKALA MOŻLIWOŚCI",
+  "marketTitle": "Tysiące sklepów.<br><em>Miejsce dla Twojej marki?</em>",
+  "marketIntro": "Biedronka, Dino i Żabka pokazują skalę polskiego handlu. A to tylko część rynku — dla Twojego produktu szukamy właściwego kierunku także w drogeriach, sieciach specjalistycznych i innych formatach.",
+  "marketUnit": "sklepów w Polsce",
+  "marketDates": [
+    "Stan na 30.06.2026",
+    "Stan na 30.09.2026",
+    "13 000. sklep otwarty 08.09.2026"
+  ],
+  "marketNote": "Przykłady skali rynku, nie lista klientów Trade Gate. Dobór sieci i możliwości sprzedaży zależą od produktu; o listingu decyduje każda sieć indywidualnie.",
+  "marketSources": "Źródła danych o sieciach",
+  "marketCta": "Sprawdźmy możliwości Twojego produktu",
+  "processTag": "02 / OD KONTAKTU DO WSPÓŁPRACY",
+  "processTitle": "Właściwe relacje.<br><em>Konsekwentne działanie.</em>",
+  "processIntro": "Poznajemy produkt, wybieramy kierunek i wspieramy rozmowy. Zakres pracy dopasowujemy do Twojej marki.",
+  "deliverable": "CEL ETAPU",
+  "personalTitle": "15 lat doświadczenia.<br><em>Relacje, które mają znaczenie.</em>",
+  "personalText": "Za Trade Gate stoi praktyczna znajomość polskiego handlu i szerokiego przekroju kategorii. Łączymy ją z relacjami z kupcami, wsparciem negocjacji i poszukiwaniem importerów, aby rozwijać możliwości sprzedaży Twojej marki.",
+  "personalValues": [
+    "Relacje z polskim modern trade",
+    "Poszukiwanie importerów w Polsce",
+    "Wsparcie negocjacji i rozwoju sprzedaży"
+  ],
+  "identityLabel": "Twój partner w rozwoju sprzedaży w Polsce.",
+  "identityCaption": "RELACJE / POŚREDNICTWO / ROZWÓJ",
+  "contactTitle": "Twój produkt.<br><em>Porozmawiajmy o możliwościach.</em>",
+  "contactIntro": "Chcesz wejść na polski rynek, znaleźć importera lub rozwinąć sprzedaż w sieciach? Przedstaw nam swoją markę.",
+  "formTitle": "Zacznijmy od rozmowy",
+  "formNote": "Link do oferty i kilka zdań o Twoim celu wystarczą na początek.",
+  "submit": "Porozmawiajmy o współpracy"
+});
  Object.assign(copy.en,{
-  approachTitle:'Know where to start.<br>Know what to prepare.<br><em>Know what comes next.</em>',
-  approachText:'A good product is the starting point. We help you identify channels worth considering, prepare a proposition for the buyer and organise the next steps. This gives you a basis for decisions about selling in Poland.',
-  scopeTag:'VALUE FOR YOUR BUSINESS',scopeTitle:'Better preparation.<br><em>Clearer decisions.</em>',
-  scopeIntro:'Our work connects product assessment, preparation for buyer conversations and development of the retail relationship. Each area supports a decision on your side. The scope depends on your brand’s stage of development.',
-  scope:[
-   ['Choose your entry direction','Product assessment and channel selection help focus your efforts on retailers and formats worth considering for your offer.','Know where to direct your offer and what to prepare before making contact.'],
-   ['Prepare for a better conversation','We turn product features into a commercial proposition for your chosen channel. We organise the arguments, price positioning and terms to discuss with the buyer.','Know how to present your product and which terms to discuss.'],
-   ['Plan your next actions','Discussion notes and sales monitoring help identify obstacles, priorities and next steps in the retail relationship.','Know what needs attention and what should guide further development.']
+  "title": "Trade Gate — Your product. Our relationships. Polish retail.",
+  "description": "15 years of trade experience and strong relationships in Polish retail. We connect manufacturers with buyers, support sales growth and help find importers in Poland.",
+  "eyebrow": "YOUR LOCAL PARTNER IN POLISH RETAIL",
+  "headline": "Your product.<br>Our relationships.<br><em>Polish retail.</em>",
+  "intro": "We draw on 15 years of trade experience and strong relationships with Polish retail chains to help manufacturers grow sales in Poland. We connect brands with buyers, support commercial discussions and help find importers suited to your product.",
+  "heroProof": "Commercial intermediation · Buyer relationships · Sales growth",
+  "cta": "Let’s talk about your brand",
+  "secondary": "Explore the market opportunity",
+  "experience": "Market knowledge.<br>Trade relationships.",
+  "strips": [
+    "Buyer relationships",
+    "Importer search",
+    "Sales development"
   ],
-  processTag:'02 / HOW WE WORK ON YOUR PROJECT',
-  processTitle:'Each stage informs<br><em>the next decision.</em>',
-  processIntro:'We start with your product and goals. Analysis and buyer conversations inform what follows.',
-  scopePhases:['Direction','Buyer preparation','Next actions'],
-  deliverable:'BASIS FOR THE NEXT STEP',
-  personalTitle:'Market knowledge.<br><em>Prepared for buyer conversations.</em>',
-  personalText:'Trade Gate’s capabilities draw on 15 years of trade experience across a broad range of product categories. We use that experience to assess product fit, prepare buyer arguments and organise the actions that follow.',
-  personalValues:['Assessment of channel fit','Commercial arguments','Clear next steps'],
-  identityLabel:'From product potential to an action plan.',
-  contactIntro:'Tell us what you make, where you sell today and which next step you are considering in Poland. We will explore the support that fits your project.',
-  formNote:'A catalogue or brand website and a brief description of your goals are enough to start a conversation. Scope and commercial terms are agreed separately.'
- });
- const pl=[
-  ['Które kanały warto rozważyć?','Analizujemy produkt, jego pozycjonowanie, konkurencję i gotowość do współpracy z sieciami. Ustalamy priorytety oraz informacje potrzebne do planowania wejścia.','Ocena produktu, priorytetowe kanały i kwestie do doprecyzowania.'],
-  ['Jak przedstawić produkt kupcowi?','Dobieramy formaty sprzedaży i pracujemy nad ofertą, argumentacją handlową oraz warunkami do omówienia. Łączymy cel producenta z wymaganiami wybranego kanału.','Plan działania i propozycja handlowa dla wybranego kanału.'],
-  ['Jakie warunki i kroki ustalono?','Wspieramy kontakt z kupcami, negocjacje warunków i przygotowanie listingu. Porządkujemy ustalenia oraz ich związek z możliwościami producenta.','Podsumowanie rozmów, uzgodnione dalsze działania i otwarte kwestie.'],
-  ['Na czym skupić dalszy rozwój?','Wspieramy bieżącą współpracę z siecią i obserwujemy sprzedaż. Na tej podstawie wskazujemy kwestie wymagające uwagi oraz możliwości kolejnych działań.','Priorytety dalszej pracy i proponowane kolejne kroki.']
- ];
- const en=[
-  ['Which channels are worth considering?','We assess your product, positioning, competition and readiness for retail. We establish priorities and the information needed to plan market entry.','Product assessment, priority channels and questions to clarify.'],
-  ['How should you present the product?','We select sales formats and work on your offer, buyer arguments and terms to discuss. We connect the manufacturer’s goals with the chosen channel’s requirements.','An action plan and commercial proposition for the chosen channel.'],
-  ['Which terms and next steps were discussed?','We support buyer contact, commercial negotiations and listing preparation. We organise discussion points and check their fit with the manufacturer’s capabilities.','Discussion summary, agreed next actions and open questions.'],
-  ['Where should you focus next?','We support the ongoing retail relationship and monitor sales. This helps identify matters requiring attention and opportunities for further action.','Priorities for further work and proposed next steps.']
- ];
- for(let i=0;i<4;i++){copy.pl.steps[i].splice(1,3,...pl[i]);copy.en.steps[i].splice(1,3,...en[i]);}
+  "approachTitle": "Great products deserve<br><em>the right connections.</em>",
+  "approachText": "We know Polish modern trade and how retail chains work. We help you reach the right buyers, communicate your product’s value and turn conversations into business development.",
+  "audience": [
+    [
+      "For international manufacturers",
+      "Your local partner in Poland.",
+      "Entering Poland? We connect you with buyers and help find importers suited to your offer. We support you from the first conversation through the development of the commercial relationship."
+    ],
+    [
+      "For Polish brands",
+      "New relationships. More opportunities.",
+      "Growing your retail sales? We draw on market knowledge and trade relationships to support buyer conversations and develop both existing and new sales channels."
+    ]
+  ],
+  "fitTitle": "Your brand. Our commercial support.",
+  "fitText": "We act as a commercial intermediary. We represent the manufacturer’s interests and support relationships with trade customers. Trade Gate does not buy products.",
+  "marketTag": "POLISH RETAIL / THE MARKET OPPORTUNITY",
+  "marketTitle": "Thousands of stores.<br><em>A place for your brand?</em>",
+  "marketIntro": "Biedronka, Dino and Żabka illustrate the scale of Polish retail. There is more to the market: we also explore drugstores, specialist chains and other formats to find the right direction for your product.",
+  "marketUnit": "stores in Poland",
+  "marketDates": [
+    "As at 30 Jun 2026",
+    "As at 30 Sep 2026",
+    "13,000th store opened 8 Sep 2026"
+  ],
+  "marketNote": "Examples of market scale, not a Trade Gate client list. Suitable retailers and sales opportunities depend on the product; each retailer makes its own listing decisions.",
+  "marketSources": "Sources for retailer figures",
+  "marketCta": "Let’s explore your product’s potential",
+  "processTag": "02 / FROM CONNECTION TO COLLABORATION",
+  "processTitle": "The right relationships.<br><em>Consistent action.</em>",
+  "processIntro": "We learn about your product, choose a direction and support buyer conversations. Our work is tailored to your brand.",
+  "deliverable": "STAGE GOAL",
+  "personalTitle": "15 years of experience.<br><em>Relationships that matter.</em>",
+  "personalText": "Trade Gate brings practical knowledge of Polish retail across a broad range of categories. We combine it with buyer relationships, negotiation support and importer search to develop sales opportunities for your brand.",
+  "personalValues": [
+    "Relationships in Polish modern trade",
+    "Importer search in Poland",
+    "Negotiation and sales development support"
+  ],
+  "identityLabel": "Your partner for sales development in Poland.",
+  "identityCaption": "RELATIONSHIPS / INTERMEDIATION / GROWTH",
+  "contactTitle": "Your product.<br><em>Let’s explore the possibilities.</em>",
+  "contactIntro": "Entering Poland, looking for an importer or growing retail sales? Introduce us to your brand.",
+  "formTitle": "Let’s start a conversation",
+  "formNote": "A link to your offer and a few words about your goals are enough to get started.",
+  "submit": "Discuss a partnership"
+});
+ const steps={
+  "pl": [
+    [
+      "Poznajemy potencjał Twojego produktu.",
+      "Przyglądamy się ofercie i wybieramy kanały, w których warto rozwijać sprzedaż.",
+      "Dopasowanie produktu do rynku."
+    ],
+    [
+      "Wybieramy właściwą drogę wejścia.",
+      "Łączymy znajomość sieci z przygotowaniem oferty. Jeśli projekt tego wymaga, pomagamy znaleźć importera w Polsce.",
+      "Oferta i kierunek rozmów."
+    ],
+    [
+      "Łączymy markę z kupcami.",
+      "Wykorzystujemy relacje handlowe, wspieramy prezentację produktu i negocjacje warunków współpracy.",
+      "Rozmowy o możliwościach współpracy."
+    ],
+    [
+      "Rozwijamy współpracę z rynkiem.",
+      "Wspieramy bieżące relacje z siecią i szukamy kolejnych możliwości sprzedaży.",
+      "Dalszy rozwój obecności marki."
+    ]
+  ],
+  "en": [
+    [
+      "Understanding your product’s potential.",
+      "We review your offer and identify channels worth pursuing for sales growth.",
+      "Product and market fit."
+    ],
+    [
+      "Choosing the right route into retail.",
+      "We combine retailer knowledge with offer preparation. Where needed, we help find an importer in Poland.",
+      "An offer and a direction for outreach."
+    ],
+    [
+      "Connecting your brand with buyers.",
+      "We draw on trade relationships, support product presentations and help negotiate commercial terms.",
+      "Conversations about collaboration."
+    ],
+    [
+      "Developing your market presence.",
+      "We support ongoing retail relationships and explore further sales opportunities.",
+      "Further development of your brand’s presence."
+    ]
+  ]
+};
+ for(const lang of ['pl','en']){
+  for(let i=0;i<4;i++) copy[lang].steps[i].splice(1,3,...steps[lang][i]);
+  copy[lang].faqs=copy[lang].faqs.filter(a=>!a[0].startsWith(lang==='pl'?'Na jakim etapie':'When should'));
+  copy[lang].faqs.splice(1,0,lang==='pl'
+   ?['Czy pomagacie znaleźć importera w Polsce?','Tak. W ramach współpracy pomagamy znaleźć importerów dopasowanych do produktu i planowanego kierunku sprzedaży. Trade Gate pozostaje pośrednikiem — nie kupuje towaru.']
+   :['Can you help us find an importer in Poland?','Yes. As part of our work, we help find importers suited to your product and target sales channels. Trade Gate acts as an intermediary and does not buy the goods.']);
+ }
  copy.pl.categories[2][2]='Oferta dopasowana do odbiorcy i kanału.';
  copy.en.categories[2][2]='An offer tailored to your audience and channel.';
 }
