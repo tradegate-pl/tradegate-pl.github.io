@@ -1,5 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { refineB2B } from './b2b-copy.mjs';
+import { refineBenefits } from './benefits-copy.mjs';
 
 const copy = {
 pl: {
@@ -26,6 +27,7 @@ en: {
 }
 };
 refineB2B(copy);
+refineBenefits(copy);
 const mark = '<svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="3" y="3" width="34" height="34" stroke="currentColor" stroke-width="1.5"/><path d="M9 18 Q20 4 31 18" stroke="currentColor" stroke-width="1.5"/><text x="20" y="31" font-family="Georgia,serif" font-size="11" font-weight="600" letter-spacing="1" fill="currentColor" text-anchor="middle">TG</text></svg>';
 const arrow = '<span aria-hidden="true">↗</span>';
 for (const [lang,c] of Object.entries(copy)) {

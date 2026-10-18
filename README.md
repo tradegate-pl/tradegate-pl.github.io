@@ -14,7 +14,7 @@ node scripts/serve.mjs
 
 Preview: http://127.0.0.1:4173
 
-Edit bilingual content and metadata in `scripts/build.mjs` and `scripts/b2b-copy.mjs`, then rebuild. Styling is in `assets/style.css` and `assets/b2b.css`; browser interactions are in `assets/main.js`. Generated pages are checked into Git so the current GitHub Pages hosting can serve them directly. Keep `CNAME` intact.
+Edit bilingual content and metadata in `scripts/build.mjs`, `scripts/b2b-copy.mjs` and `scripts/benefits-copy.mjs`, then rebuild. Styling is in `assets/style.css` and `assets/b2b.css`; browser interactions are in `assets/main.js`. Generated pages are checked into Git so the current GitHub Pages hosting can serve them directly. Keep `CNAME` intact.
 
 ## Delivery
 
@@ -35,6 +35,8 @@ DM Sans and Instrument Serif are hosted locally under their included SIL Open Fo
 The B2B revision makes the service explicit in the opening, defines scope and work outcomes, explains fit and enquiry follow-up, and adds an optional website/catalogue field. Audience calls to action preselect the development stage. The website field accepts a bare domain without blocking the enquiry.
 
 The owner confirmed that Trade Gate is a commercial intermediary and does not buy goods. This is explicit in the PL/EN opening, scope and FAQ. No additional import, logistics or geographic capabilities are inferred from that confirmation.
+
+Benefits and process have separate roles: the benefits cards explain the manufacturer's decisions and preparation; the four-stage process explains the work and its outputs. Client success stories are explicitly deferred until permissions are available. No invented projects, people photographs or implied testimonials have been added.
 
 ## Review before production
 
