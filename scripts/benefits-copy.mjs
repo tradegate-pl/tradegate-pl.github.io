@@ -33,13 +33,13 @@ export function refineBenefits(copy){
   "fitText": "Działamy jako pośrednik handlowy. Reprezentujemy interesy producenta i wspieramy rozwój relacji z odbiorcami. Trade Gate nie kupuje towaru.",
   "marketTag": "POLSKI RYNEK / SKALA MOŻLIWOŚCI",
   "marketTitle": "Duży rynek.<br><em>Wiele dróg do klienta.</em>",
-  "marketIntro": "Od dyskontów i supermarketów po convenience, drogerie i sieci specjalistyczne. Pomagamy znaleźć kanały sprzedaży dopasowane do Twojego produktu.",
-  "marketApprox": "około",
+  "marketIntro": "Dyskonty, supermarkety, convenience i sieci franczyzowe. Do tego drogerie oraz handel specjalistyczny. Pomagamy dotrzeć do właściwych kupców i znaleźć importerów dopasowanych do Twojego produktu.",
+  "marketApprox": "ponad",
   "marketStats": [
     [
-      "60 000",
-      "Sklepów spożywczych największych sieci",
-      "Stan na koniec 2024 r. Raport IFP z 2026 r."
+      "50 000",
+      "Punktów sprzedaży w handlu sieciowym i franczyzowym w Polsce",
+      "Skala wybranych sieci, według danych operatorów opublikowanych w 2026 r."
     ]
   ],
   "marketNetworksTitle": "Sieci, które tworzą polski rynek",
@@ -50,9 +50,9 @@ export function refineBenefits(copy){
     "Dom, ogród i lifestyle",
     "Elektronika i AGD"
   ],
-  "marketNote": "Około 60 tys. to zaokrąglenie liczby sklepów największych sieci spożywczych na koniec 2024 r., według raportu IFP z 2026 r. Drogerie i sieci niespożywcze są dodatkowymi kanałami rynku. Nazwy ilustrują rynek, nie listę klientów Trade Gate.",
-  "marketSources": "Źródła danych i ich zakres",
-  "marketSourceText": "Liczba sklepów: Instytut Finansów Publicznych, raport z 2 marca 2026 r., s. 11 i załącznik 1. Raport wskazuje ok. 62 174 sklepy ogólnospożywcze największych sieci na koniec 2024 r.; na stronie zaokrąglamy do ok. 60 tys. Obejmuje handel sieciowy i franczyzowy, nie wyłącznie modern trade. Opracowanie zleciły Stowarzyszenie Ajentów i Franczyzobiorców oraz Krajowy Sekretariat Banków, Handlu i Ubezpieczeń NSZZ „Solidarność”.",
+  "marketNote": "Zestawienie wybranych sieci pokazuje skalę rynku, nie zasięg Trade Gate. Nazwy sieci są przykładami kanałów sprzedaży, nie listą naszych klientów.",
+  "marketSources": "Metoda i źródła danych",
+  "marketSourceText": "Własne zestawienie oficjalnych danych operatorów opublikowanych w 2026 r., sprawdzone 19 października 2026 r. Liczby dotyczą różnych dat, nie spisu z jednego dnia. Suma obejmuje wybrane sieci oraz systemy franczyzowe i partnerskie; jest szersza niż sam modern trade. Progi zaokrąglono w dół, bez podwójnego dodawania marek do sum ich grup. Nie doliczano sklepów zagranicznych, e-commerce, hurtowni ani drogerii i sieci niespożywczych. To udokumentowana skala wybranych sieci, nie pełny spis rynku.",
   "marketSourceLabel": "Instytut Finansów Publicznych — raport, s. 11",
   "marketCta": "Sprawdźmy możliwości Twojego produktu",
   "processTag": "02 / OD KONTAKTU DO WSPÓŁPRACY",
@@ -72,7 +72,57 @@ export function refineBenefits(copy){
   "contactIntro": "Chcesz wejść na polski rynek, znaleźć importera lub rozwinąć sprzedaż w sieciach? Przedstaw nam swoją markę.",
   "formTitle": "Zacznijmy od rozmowy",
   "formNote": "Link do oferty i kilka zdań o Twoim celu wystarczą na początek.",
-  "submit": "Porozmawiajmy o współpracy"
+  "submit": "Porozmawiajmy o współpracy",
+  "marketSourceLinks": [
+    [
+      "https://www.zabka.pl/zabka-otworzyla-13-000-sklep-nowoczesna-placowka-zlokalizowana-jest-w-kultowym-warszawskim-kompleksie/",
+      "Żabka"
+    ],
+    [
+      "https://www.jeronimomartins.com/en/investors/jm-in-numbers/performance-business-unit/",
+      "Biedronka"
+    ],
+    [
+      "https://grupadino.pl/siec-dino-liczy-3283-sklepy-256-nowych-sklepow-otwartych-od-poczatku-2026-r/",
+      "Dino"
+    ],
+    [
+      "https://www.pap.pl/mediaroom/miliardy-dla-polskiej-gospodarki-rekordowy-eksport-i-konsekwentne-dzialania-na-rzecz",
+      "Lidl"
+    ],
+    [
+      "https://sallinggroup.com/en/stores/key-figures",
+      "Netto"
+    ],
+    [
+      "https://firma.kaufland.pl/prasa/newsroom/2026/czerwiec/kuchnia-bez-presji-i-perfekcji.-kaufland-i-fundacja-kosmos-dla-dziewczynek-wydaja-ksiazke-ktora-karmi-relacje",
+      "Kaufland"
+    ],
+    [
+      "https://media.auchan.pl/komunikaty-prasowe/auchan-rosnie-w-sile-30-lat-rozwoju-w-polsce",
+      "Auchan — bez Easy przy bp"
+    ],
+    [
+      "https://www.carrefour.com/sites/default/files/2026-07/Carrefour%20H1%202026%20Presentation_4.pdf#page=30",
+      "Carrefour"
+    ],
+    [
+      "https://muszkieterowie.pl/siec-intermarche-otworzyla-pierwszy-sklep-w-orzeszu-ida-i-salar-diznabi-debiutuja-w-roli-przedsiebiorcow-grupy-muszkieterow/",
+      "Intermarché"
+    ],
+    [
+      "https://goodonepr.prowly.com/472684-polomarket-w-walbrzychu-ponownie-otwarty-po-gruntownej-modernizacji",
+      "POLOmarket"
+    ],
+    [
+      "https://cdn.prod.website-files.com/64a2cdda92c11b4ee578fe23/6a8fc534251b715e30ce2bac_sklepy-stores-2016-2026-q2%20(1).xlsx",
+      "Eurocash — zestawienie sklepów Q2 2026 (XLSX)"
+    ],
+    [
+      "https://poradnikhandlowca.com.pl/artykuly/gk-specjal-planuje-20-tys-sklepow-franczyzowych-w-2030-roku/",
+      "GK Specjał — październik 2026, Poradnik Handlowca"
+    ]
+  ]
 });
  Object.assign(copy.en,{
   "title": "Trade Gate — Your product. Our relationships. Polish retail.",
@@ -107,13 +157,13 @@ export function refineBenefits(copy){
   "fitText": "We act as a commercial intermediary. We represent the manufacturer’s interests and support relationships with trade customers. Trade Gate does not buy products.",
   "marketTag": "POLISH RETAIL / THE MARKET OPPORTUNITY",
   "marketTitle": "A large market.<br><em>Many routes to customers.</em>",
-  "marketIntro": "From discounters and supermarkets to convenience stores, drugstores and specialist chains. We help find sales channels suited to your product.",
-  "marketApprox": "around",
+  "marketIntro": "Discounters, supermarkets, convenience stores and franchise networks. Plus drugstores and specialist retailers. We help you reach the right buyers and find importers suited to your product.",
+  "marketApprox": "more than",
   "marketStats": [
     [
-      "60,000",
-      "Grocery stores in major retail chains",
-      "Year-end 2024 data. IFP report dated 2026."
+      "50,000",
+      "Retail outlets across chains and franchise networks in Poland",
+      "Selected networks, based on operator data published in 2026."
     ]
   ],
   "marketNetworksTitle": "Retailers shaping the Polish market",
@@ -124,9 +174,9 @@ export function refineBenefits(copy){
     "Home, garden & lifestyle",
     "Electronics & appliances"
   ],
-  "marketNote": "Around 60,000 is a rounded figure for major grocery chains at year-end 2024, from the IFP report dated 2026. Drugstores and non-grocery chains are additional market channels. Names illustrate the market, not a Trade Gate client list.",
-  "marketSources": "Data sources and scope",
-  "marketSourceText": "Store count: Institute of Public Finance (Poland), report dated 2 March 2026, p. 11 and Appendix 1. It reports approximately 62,174 grocery stores operated by major chains at year-end 2024; rounded here to around 60,000. Includes chain and franchise retail, rather than modern trade alone. Commissioned by the Association of Agents and Franchisees and the National Secretariat of Banks, Commerce and Insurance of NSZZ Solidarność.",
+  "marketNote": "The selected networks illustrate market scale, not Trade Gate’s reach. Retailer names are examples of sales channels, not our client list.",
+  "marketSources": "Method and data sources",
+  "marketSourceText": "Our compilation of official operator data published in 2026, checked on 19 October 2026. Figures refer to different dates, rather than a single-day census. The total covers selected chains, franchise and partner networks, a broader scope than modern trade alone. Lower thresholds are used without adding brands twice to their group totals. Overseas stores, e-commerce, wholesale outlets, drugstores and non-food chains are excluded. This documents selected networks, rather than a complete market census.",
   "marketSourceLabel": "Institute of Public Finance — report, p. 11",
   "marketCta": "Let’s explore your product’s potential",
   "processTag": "02 / FROM CONNECTION TO COLLABORATION",
@@ -146,7 +196,57 @@ export function refineBenefits(copy){
   "contactIntro": "Entering Poland, looking for an importer or growing retail sales? Introduce us to your brand.",
   "formTitle": "Let’s start a conversation",
   "formNote": "A link to your offer and a few words about your goals are enough to get started.",
-  "submit": "Discuss a partnership"
+  "submit": "Discuss a partnership",
+  "marketSourceLinks": [
+    [
+      "https://www.zabka.pl/zabka-otworzyla-13-000-sklep-nowoczesna-placowka-zlokalizowana-jest-w-kultowym-warszawskim-kompleksie/",
+      "Żabka"
+    ],
+    [
+      "https://www.jeronimomartins.com/en/investors/jm-in-numbers/performance-business-unit/",
+      "Biedronka"
+    ],
+    [
+      "https://grupadino.pl/siec-dino-liczy-3283-sklepy-256-nowych-sklepow-otwartych-od-poczatku-2026-r/",
+      "Dino"
+    ],
+    [
+      "https://www.pap.pl/mediaroom/miliardy-dla-polskiej-gospodarki-rekordowy-eksport-i-konsekwentne-dzialania-na-rzecz",
+      "Lidl"
+    ],
+    [
+      "https://sallinggroup.com/en/stores/key-figures",
+      "Netto"
+    ],
+    [
+      "https://firma.kaufland.pl/prasa/newsroom/2026/czerwiec/kuchnia-bez-presji-i-perfekcji.-kaufland-i-fundacja-kosmos-dla-dziewczynek-wydaja-ksiazke-ktora-karmi-relacje",
+      "Kaufland"
+    ],
+    [
+      "https://media.auchan.pl/komunikaty-prasowe/auchan-rosnie-w-sile-30-lat-rozwoju-w-polsce",
+      "Auchan — excluding Easy at bp"
+    ],
+    [
+      "https://www.carrefour.com/sites/default/files/2026-07/Carrefour%20H1%202026%20Presentation_4.pdf#page=30",
+      "Carrefour"
+    ],
+    [
+      "https://muszkieterowie.pl/siec-intermarche-otworzyla-pierwszy-sklep-w-orzeszu-ida-i-salar-diznabi-debiutuja-w-roli-przedsiebiorcow-grupy-muszkieterow/",
+      "Intermarché"
+    ],
+    [
+      "https://goodonepr.prowly.com/472684-polomarket-w-walbrzychu-ponownie-otwarty-po-gruntownej-modernizacji",
+      "POLOmarket"
+    ],
+    [
+      "https://cdn.prod.website-files.com/64a2cdda92c11b4ee578fe23/6a8fc534251b715e30ce2bac_sklepy-stores-2016-2026-q2%20(1).xlsx",
+      "Eurocash — store network Q2 2026 (XLSX)"
+    ],
+    [
+      "https://poradnikhandlowca.com.pl/artykuly/gk-specjal-planuje-20-tys-sklepow-franczyzowych-w-2030-roku/",
+      "Specjał Group — October 2026, Poradnik Handlowca"
+    ]
+  ]
 });
  const steps={
   "pl": [
