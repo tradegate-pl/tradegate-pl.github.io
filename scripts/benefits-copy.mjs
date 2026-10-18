@@ -31,20 +31,20 @@ export function refineBenefits(copy){
   ],
   "fitTitle": "Twoja marka. Nasze wsparcie handlowe.",
   "fitText": "Działamy jako pośrednik handlowy. Reprezentujemy interesy producenta i wspieramy rozwój relacji z odbiorcami. Trade Gate nie kupuje towaru.",
-    "marketTag": "POLSKI RYNEK / SKALA MOŻLIWOŚCI",
+  "marketTag": "POLSKI RYNEK / SKALA MOŻLIWOŚCI",
   "marketTitle": "Duży rynek.<br><em>Wiele dróg do klienta.</em>",
   "marketIntro": "Od dyskontów i supermarketów po convenience, drogerie i sieci specjalistyczne. Pomagamy znaleźć kanały sprzedaży dopasowane do Twojego produktu.",
   "marketApprox": "około",
   "marketStats": [
     [
       "60 000",
-      "Sklepów spożywczych w sieciach",
-      "Szeroki rynek, obejmujący także mniejsze sieci."
+      "Sklepów spożywczych największych sieci",
+      "Skala sieciowego handlu spożywczego w Polsce."
     ],
     [
-      "30 000",
-      "W tym nowoczesne formaty spożywcze",
-      "Dyskonty, supermarkety, hipermarkety i modern convenience."
+      "37 mln",
+      "Mieszkańców Polski",
+      "Duży rynek dla marek z różnych kategorii."
     ]
   ],
   "marketNetworksTitle": "Sieci, które tworzą polski rynek",
@@ -55,10 +55,10 @@ export function refineBenefits(copy){
     "Dom, ogród i lifestyle",
     "Elektronika i AGD"
   ],
-  "marketNote": "Liczby to zaokrąglone szacunki dla handlu spożywczego za 2025 r. Drogerie i sieci specjalistyczne są dodatkowymi kanałami rynku. Nazwy ilustrują rynek, nie listę klientów Trade Gate.",
-  "marketSources": "Źródło i zakres szacunku",
-  "marketSourceText": "Obliczenie własne na podstawie danych o formatach rynku w Żabka Group Annual Report 2025, s. 25 (publikacja: marzec 2026; analiza spółki na podstawie szacunków PMR za 2025 r.). Suma kategorii sieciowych: ok. 59,45 tys. sklepów, w tym ok. 30,25 tys. w dyskontach, supermarketach, hipermarketach i modern convenience. Zaokrąglone do 60 tys. i 30 tys. Druga liczba jest częścią pierwszej. Bez stacji paliw, niezależnego handlu tradycyjnego oraz sieci niespożywczych. To skala rynku, a nie deklarowany zasięg Trade Gate ani gwarancja dystrybucji.",
-  "marketSourceLabel": "Raport źródłowy — s. 25",
+  "marketNote": "Około 60 tys. to zaokrąglenie liczby sklepów największych sieci spożywczych na koniec 2024 r. Liczba mieszkańców: GUS, I półrocze 2026. Nazwy sieci ilustrują rynek, nie listę klientów Trade Gate.",
+  "marketSources": "Źródła danych i ich zakres",
+  "marketSourceText": "Liczba sklepów: Instytut Finansów Publicznych, raport z 2 marca 2026 r., s. 11 i załącznik 1. Raport wskazuje ok. 62 174 sklepy ogólnospożywcze największych sieci na koniec 2024 r.; na stronie zaokrąglamy do ok. 60 tys. Obejmuje handel sieciowy i franczyzowy, nie wyłącznie modern trade. Opracowanie zleciły Stowarzyszenie Ajentów i Franczyzobiorców oraz Krajowy Sekretariat Banków, Handlu i Ubezpieczeń NSZZ „Solidarność”.",
+  "marketSourceLabel": "Instytut Finansów Publicznych — raport, s. 11",
   "marketCta": "Sprawdźmy możliwości Twojego produktu",
   "processTag": "02 / OD KONTAKTU DO WSPÓŁPRACY",
   "processTitle": "Właściwe relacje.<br><em>Konsekwentne działanie.</em>",
@@ -77,7 +77,9 @@ export function refineBenefits(copy){
   "contactIntro": "Chcesz wejść na polski rynek, znaleźć importera lub rozwinąć sprzedaż w sieciach? Przedstaw nam swoją markę.",
   "formTitle": "Zacznijmy od rozmowy",
   "formNote": "Link do oferty i kilka zdań o Twoim celu wystarczą na początek.",
-  "submit": "Porozmawiajmy o współpracy"
+  "submit": "Porozmawiajmy o współpracy",
+  "marketPopulationText": "Liczba mieszkańców: GUS, Sytuacja społeczno-gospodarcza kraju, publikacja 23.09.2026. Wstępny szacunek na koniec I półrocza 2026 r.: 37,2 mln, zaokrąglone do ok. 37 mln. Obie liczby opisują skalę rynku, a nie zasięg Trade Gate ani gwarantowaną dystrybucję. Drogerie i sieci niespożywcze są dodatkowymi kanałami, poza podaną liczbą sklepów.",
+  "marketPopulationLabel": "GUS — dane za I półrocze 2026"
 });
  Object.assign(copy.en,{
   "title": "Trade Gate — Your product. Our relationships. Polish retail.",
@@ -110,20 +112,20 @@ export function refineBenefits(copy){
   ],
   "fitTitle": "Your brand. Our commercial support.",
   "fitText": "We act as a commercial intermediary. We represent the manufacturer’s interests and support relationships with trade customers. Trade Gate does not buy products.",
-    "marketTag": "POLISH RETAIL / THE MARKET OPPORTUNITY",
+  "marketTag": "POLISH RETAIL / THE MARKET OPPORTUNITY",
   "marketTitle": "A large market.<br><em>Many routes to customers.</em>",
   "marketIntro": "From discounters and supermarkets to convenience stores, drugstores and specialist chains. We help find sales channels suited to your product.",
   "marketApprox": "around",
   "marketStats": [
     [
       "60,000",
-      "Grocery stores in retail chains",
-      "The wider network, including smaller retail chains."
+      "Grocery stores in major retail chains",
+      "The scale of Poland’s chain grocery retail market."
     ],
     [
-      "30,000",
-      "Of these, modern grocery formats",
-      "Discounters, supermarkets, hypermarkets and modern convenience."
+      "37m",
+      "People living in Poland",
+      "A large consumer market across product categories."
     ]
   ],
   "marketNetworksTitle": "Retailers shaping the Polish market",
@@ -134,10 +136,10 @@ export function refineBenefits(copy){
     "Home, garden & lifestyle",
     "Electronics & appliances"
   ],
-  "marketNote": "Figures are rounded estimates for grocery retail in 2025. Drugstores and specialist chains provide additional market channels. Names illustrate the market, not a Trade Gate client list.",
-  "marketSources": "Source and estimate scope",
-  "marketSourceText": "Our calculation from market-format data in Żabka Group Annual Report 2025, p. 25 (published March 2026; company analysis based on PMR estimates for 2025). Chain formats total approximately 59,450 stores, including approximately 30,250 across discounters, supermarkets, hypermarkets and modern convenience. Rounded to 60,000 and 30,000. The second figure is part of the first. Excludes forecourts, independent traditional stores and non-grocery chains. Figures describe the market, not Trade Gate’s coverage or guaranteed distribution.",
-  "marketSourceLabel": "Source report — p. 25",
+  "marketNote": "Around 60,000 is a rounded figure for major grocery chains at the end of 2024. Population: Statistics Poland, first half of 2026. Retailer names illustrate the market, not a Trade Gate client list.",
+  "marketSources": "Data sources and scope",
+  "marketSourceText": "Store count: Institute of Public Finance (Poland), report dated 2 March 2026, p. 11 and Appendix 1. It reports approximately 62,174 grocery stores operated by major chains at year-end 2024; rounded here to around 60,000. Includes chain and franchise retail, rather than modern trade alone. Commissioned by the Association of Agents and Franchisees and the National Secretariat of Banks, Commerce and Insurance of NSZZ Solidarność.",
+  "marketSourceLabel": "Institute of Public Finance — report, p. 11",
   "marketCta": "Let’s explore your product’s potential",
   "processTag": "02 / FROM CONNECTION TO COLLABORATION",
   "processTitle": "The right relationships.<br><em>Consistent action.</em>",
@@ -156,7 +158,9 @@ export function refineBenefits(copy){
   "contactIntro": "Entering Poland, looking for an importer or growing retail sales? Introduce us to your brand.",
   "formTitle": "Let’s start a conversation",
   "formNote": "A link to your offer and a few words about your goals are enough to get started.",
-  "submit": "Discuss a partnership"
+  "submit": "Discuss a partnership",
+  "marketPopulationText": "Population: Statistics Poland, Socio-economic situation of the country, published 23 September 2026. Preliminary estimate at the end of the first half of 2026: 37.2 million, rounded to around 37 million. Both figures describe market scale, not Trade Gate’s coverage or guaranteed distribution. Drugstores and non-grocery chains are additional channels outside the store count.",
+  "marketPopulationLabel": "Statistics Poland — first half of 2026"
 });
  const steps={
   "pl": [
