@@ -1,6 +1,6 @@
 # Trade Gate — The Retail Gateway
 
-Polish and English B2B website for Trade Gate. Built for GitHub Pages with no runtime framework, analytics or third-party font requests.
+Polish and English B2B website for Trade Gate. Built for GitHub Pages with no runtime framework or third-party font requests. Google Analytics 4 loads only after the visitor agrees to statistics.
 
 ## Work locally
 
@@ -38,7 +38,15 @@ The owner confirmed that Trade Gate is a commercial intermediary, does not buy g
 
 The opening prioritises relationships, sales opportunities and importer search. The market section presents a conservative compilation of more than 50,000 outlets in selected Polish retail chains, franchise and partner networks, based on official operator data published in 2026. It retains 26 representative retailer names across food, beauty, home/garden/lifestyle and electronics. These are market examples, not a client list or a guarantee of distribution. No individual chain counts are displayed. The four-stage process is kept concise. Client success stories are deferred until permissions are available. No invented projects, people photographs or implied testimonials have been added.
 
-## Production
+## Visitor statistics
+
+The PL and EN pages share GA4 web stream `Trade Gate — PL / EN` (`G-X274MWEVWF`). The public measurement ID is maintained in `scripts/analytics-config.mjs`. Basic consent mode blocks all Google tag requests until consent; declining leaves all website functions available. The choice expires after 180 days and can be changed in the footer. Local previews never send production analytics.
+
+Collected events: `page_view`, `contact_email_click` and `generate_lead` (only after Formspree confirms successful delivery). The tag strips URL query strings and fragments and sends no form field values. Advertising features and Google Signals are disabled in the tag. Enhanced measurement is disabled in the web stream to avoid duplicate events and automatic form tracking. Geography is approximate and depends on consent and browser/network access to Google.
+
+Verify consent, revocation and event behaviour with `node --test scripts/analytics.test.mjs`. Rebuild after changing the measurement ID. Analytics begins collecting after deployment; it cannot recover visits from before installation.
+
+## Hosting
 
 The bilingual site is hosted on GitHub Pages at https://tradegate.pl/. Changes are reviewed and validated before merging to main. Retail figures include dates and source links so they can be maintained as the market changes. Responsive checks cover desktop, tablet and phone widths in both languages; device emulation does not replace checking a physical handset.
 
